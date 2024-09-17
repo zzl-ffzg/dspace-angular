@@ -1,0 +1,39 @@
+<footer class="clarinFooter">
+  <div class="contentWrapper">
+    <div class="clarinFooter__LogoWrapper">
+      <a href="/" class="clarinFooter__Logo">
+        <img src="/assets/images/clarin-logo-footer.png" width="180" height="32" />
+      </a>
+      <p>{{ 'The Croatian National Consortium of CLARIN ERIC Research Infrastructure' | translate }}</p>
+    </div>
+
+    <nav class="clarinFooter__Navigation">
+      <div *ngFor="let category of footerLinks | keyvalue">
+        <div class="clarinFooter__NavCategoryTitle">
+          <a *ngIf="footerLinks[category.key].sectionUrl; else withoutLink" href="{{ footerLinks[category.key].sectionUrl }}">{{ footerLinks[category.key].sectionTitle }}</a>
+          <ng-template #withoutLink>
+            {{ footerLinks[category.key].sectionTitle }}
+          </ng-template>
+        </div>
+  
+        <div *ngIf="footerLinks[category.key].items.length">
+          <a *ngFor="let link of footerLinks[category.key].items" href="{{ link.path }}">{{ link.title }}</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="clarinFooter__Logos">
+      <div>
+        <a href="https://www.clarin.eu/content/certified-centres" target="_blank"><img src="/assets/images/b-centre.png" alt="{{ 'CLARIN CENTRE B' | translate }}" /></a>
+        <a href="https://www.clarin.eu/content/knowledge-centres" target="_blank"><img src="/assets/images/k-centre.png" alt="{{ 'CLARIN CENTRE K' | translate }}" style="filter:brightness(0.88)" /></a>
+        <a href="https://www.coretrustseal.org/wp-content/uploads/2019/08/LINDAT-CLARIN.pdf" target="_blank"><img src="/assets/images/core-trust-seal-mono.png" alt="{{ 'CoreTrustSeal Certification' | translate }}" /></a>
+      </div>
+
+      <div>
+        <a href="https://lindat.cz/user/login"><img src="/assets/images/LINDAT-CLARIAH-cz-gray.svg" alt="{{ 'Home Page' | translate }}" /></a>
+      </div>
+    </div>
+    
+    <p class="clarinFooter__Copyright">&copy; {{ currentYear }} HR-CLARIN</p>
+  </div>
+</footer>
