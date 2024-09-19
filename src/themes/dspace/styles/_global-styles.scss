@@ -66,3 +66,37 @@ header {
   padding-left: 25px;
   padding-right: 25px;
 }
+
+.clarinButton,
+%clarinButton {
+  display: inline-block;
+  min-height: 30px;
+  padding: 4px 16px;
+  border: 1px solid var(--clarin-blue-dark);
+  background-color: var(--clarin-blue-dark);
+  color: white;
+  font-size: 14px;
+  transition: background-color 300ms, border-color 300ms, color 300ms;
+  &:hover {
+    text-decoration: none !important;
+    border-color: var(--clarin-red);
+    background-color: var(--clarin-red);
+    color: white;
+  }
+
+  & + .clarinButton,
+  & + .clarinButton--Secondary {
+    margin-left: 10px;
+  }
+}
+
+.clarinButton--Secondary {
+  @extend %clarinButton;
+  background-color: white;
+  color: var(--clarin-blue-dark);
+  &:hover {
+    border-color: var(--clarin-blue-light);
+    background-color: var(--clarin-blue-light);
+    color: white;
+  }
+}

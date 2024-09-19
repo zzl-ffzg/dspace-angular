@@ -33,6 +33,9 @@ export class ClarinNavbarTopComponent implements OnInit, AfterViewInit {
    */
   repositoryPath = '';
 
+  currentLanguage = this.localeService.getCurrentLanguageCode();
+  nextLanguage = ['en', 'cs'].find(lang => lang !== this.currentLanguage);
+
   ngOnInit(): void {
     let authenticated = false;
     this.loadRepositoryPath();
@@ -83,8 +86,8 @@ export class ClarinNavbarTopComponent implements OnInit, AfterViewInit {
     this.repositoryPath = this.halService.getRootHref();
   }
 
-  setLanguage(language) {
-    this.localeService.setCurrentLanguageCode(language);
+  setLanguage() {
+    this.localeService.setCurrentLanguageCode(this.nextLanguage);
     this.localeService.refreshAfterChangeLanguage();
   }
 }

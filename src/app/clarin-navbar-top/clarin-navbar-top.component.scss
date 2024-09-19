@@ -1,31 +1,64 @@
 .clarin-top-header {
-  position: absolute;
-  width: 100%;
-  z-index: 12;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.clarin-logout-badge {
-  background-color: #428bca;
-  font-size: 13px;
-  border-top-left-radius: unset;
-  border-top-right-radius: unset;
-  display: inherit;
-  position: relative;
-  z-index: 2;
+.clarin-header-logo {
+  display: flex;
+  align-items: center;
+  img {
+    &:first-of-type {
+      width: 180px;
+    }
+
+    &:last-of-type {
+      margin-left: 15px;
+      vertical-align: bottom;
+    }
+  }
 }
 
-.clarin-login-badge {
-  background-color: #d9534f;
-  font-size: 16px;
-  border-top-left-radius: unset;
-  border-top-right-radius: unset;
+.clarin-top-header-right {
+  display: flex;
+  align-items: center;
+
+  .signon.clarinButton:hover {
+    text-decoration: none !important;
+  }
 }
 
-.signon:hover {
-  cursor: pointer;
-  text-decoration: underline !important;
+.clarin-top-header-language-selector {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+  color: #052d4d;
+  font-size: 14px;
+  letter-spacing: .7px;
+  transition: color .2s linear;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover {
+    color: $red;
+    .clarin-top-header-language-icon {
+      background-color: $red;
+    }
+  }
 }
 
-.language-icon {
-  cursor: pointer;
+.clarin-top-header-language-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clarin-blue-dark);
+  transition: background-color .2s linear;
+  pointer-events: none;
+  img {
+    width: 70%;
+  }
 }
