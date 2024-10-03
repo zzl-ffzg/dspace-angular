@@ -4,30 +4,44 @@
       <img src="../../assets/images/clarin-header-logo.svg" />
       <img src="../../assets/images/clarin-logo-without-text.png" />
     </a>
+
+    <button type="button" class="clarin-header-mobile-menu" (click)="toggleMainMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
 
   <div class="clarin-top-header-right">
-    <button class="clarin-top-header-language-selector" (click)="setLanguage()">
-      {{ nextLanguage }}
-      <div class="clarin-top-header-language-icon">
-        <img src="../../assets/images/language-icon.svg" width="30" height="30" alt="{{ 'language.icon' | translate }}" />
+    <div class="clarin-top-header-search">
+      <input type="text" />
+      <button type="button" (click)="submitSearch()">
+        {{ 'header.search' | translate }}
+        <img src="../../assets/images/search-icon.svg" width="14" height="14" />
+        <img src="../../assets/images/search-icon-blue.svg" width="14" height="14" />
+      </button>
+    </div>
+    <div class="clarin-top-header-login-wrapper">
+      <button class="clarin-top-header-language-selector" (click)="setLanguage()">
+        {{ nextLanguage }}
+        <div class="clarin-top-header-language-icon">
+          <img src="../../assets/images/language-icon.svg" width="30" height="30" alt="{{ 'language.icon' | translate }}" />
+        </div>
+      </button>
+      <div *ngIf="authenticatedUser == null">
+        <a id="clarin-signon-discojuice" class="signon clarinButton" >
+          {{'login.title' | translate}}
+        </a>
       </div>
-    </button>
-    <div *ngIf="authenticatedUser == null">
-      <a id="clarin-signon-discojuice" class="signon clarinButton" >
-        {{'login.title' | translate}}
-      </a>
-    </div>
-    <a class="hidden" id="repository_path" [href]="repositoryPath"></a>
-    <div *ngIf="authenticatedUser != null">
-      <a routerLink="/profile" class="clarinButton">
-        {{authenticatedUser.name}}
-      </a>
-      <a routerLink="/logout" class="clarinButton--Secondary">
-        {{'logout.title' | translate}}
-      </a>
-    </div>
-    <div>
+      <a class="hidden" id="repository_path" [href]="repositoryPath"></a>
+      <div *ngIf="authenticatedUser != null">
+        <a routerLink="/profile" class="clarinButton">
+          {{authenticatedUser.name}}
+        </a>
+        <a routerLink="/logout" class="clarinButton--Secondary">
+          {{'logout.title' | translate}}
+        </a>
+      </div>
     </div>
   </div>
 </div>

@@ -1,6 +1,23 @@
 <header class="header">
   <ds-clarin-navbar-top></ds-clarin-navbar-top>
-  <div class="lindat-common2 lindat-common-header">
+  <div class="clarin-navigation">
+    <nav>
+      <div *ngFor="let link of links" class="clarin-header-link-wrapper">
+        <a *ngIf="!link.items; else aTag" href="{{ link.path }}">{{ link.text }}</a>
+        <ng-template #aTag>
+          <button class="clarin-header-dropdown-button" (click)="toggleSubmenuClass($event)">
+            {{ link.text }}
+            <img src="/assets/images/menu-arrow-down.svg" />
+            <img src="/assets/images/menu-arrow-down-white.svg" />
+          </button>
+          <div class="clarin-header-subnav">
+            <a *ngFor="let subNav of link.items" href="{{ subNav.path }}" class="clarin-header-subnav-item">{{ subNav.text }}</a>
+          </div>
+        </ng-template>        
+      </div>
+    </nav>
+  </div>
+  <!-- <div class="lindat-common2 lindat-common-header">
     <header data-version="3.0.5" data-build="05eff1186f12528f221a63b021c7b7dc81301429">
       <nav class="lindat-navbar lindat-navbar-expand-lg lindat-justify-content-between lindat-navbar-dark ">
         <div class="lindat-block lindat-block--clariah-theme-branding">
@@ -65,5 +82,5 @@
         </div>
       </nav>
     </header>
-  </div>
+  </div> -->
 </header>

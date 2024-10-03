@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
+import { AfterViewInit, Component, Inject, OnInit, PLATFORM_ID, Renderer2, ElementRef, ViewEncapsulation  } from '@angular/core';
 import { AuthService } from '../core/auth/auth.service';
 import { take } from 'rxjs/operators';
 import { EPerson } from '../core/eperson/models/eperson.model';
@@ -6,6 +6,7 @@ import { ScriptLoaderService } from './script-loader-service';
 import { HALEndpointService } from '../core/shared/hal-endpoint.service';
 import { LocaleService } from '../core/locale/locale.service';
 import { isPlatformBrowser } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 
 /**
  * The component which wraps `language` and `login`/`logout + profile` operations in the top navbar.
@@ -13,7 +14,8 @@ import { isPlatformBrowser } from '@angular/common';
 @Component({
   selector: 'ds-clarin-navbar-top',
   templateUrl: './clarin-navbar-top.component.html',
-  styleUrls: ['./clarin-navbar-top.component.scss']
+  styleUrls: ['./clarin-navbar-top.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class ClarinNavbarTopComponent implements OnInit, AfterViewInit {
 
@@ -21,6 +23,9 @@ export class ClarinNavbarTopComponent implements OnInit, AfterViewInit {
               private halService: HALEndpointService,
               private scriptLoader: ScriptLoaderService,
               private localeService: LocaleService,
+              private route: ActivatedRoute,
+              private renderer: Renderer2,
+              private el: ElementRef,
               @Inject(PLATFORM_ID) private platformId: Object) { }
 
   /**
@@ -37,6 +42,7 @@ export class ClarinNavbarTopComponent implements OnInit, AfterViewInit {
   nextLanguage = ['en', 'cs'].find(lang => lang !== this.currentLanguage);
 
   ngOnInit(): void {
+    const queryParams = this.route.snapshot.queryParams;
     let authenticated = false;
     this.loadRepositoryPath();
     this.authService.isAuthenticated()
@@ -89,5 +95,13 @@ export class ClarinNavbarTopComponent implements OnInit, AfterViewInit {
   setLanguage() {
     this.localeService.setCurrentLanguageCode(this.nextLanguage);
     this.localeService.refreshAfterChangeLanguage();
+  }
+
+  toggleMainMenu() {
+    this.renderer[this.el.nativeElement.classList.contains('menuOpened') ? 'removeClass' : 'addClass'](this.el.nativeElement, 'menuOpened');
+  }
+
+  submitSearch() {
+    console.log('search');
   }
 }

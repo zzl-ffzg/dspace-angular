@@ -30,6 +30,9 @@ a {
 #main-content {
     z-index: var(--ds-main-z-index);
     flex: 1 1 100%;
+    @media (max-width: 950px) {
+        padding-top: 85px;
+    }
 }
 
 .alert.hide {
