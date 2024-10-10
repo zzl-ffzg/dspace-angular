@@ -3,15 +3,15 @@
   <div class="clarin-navigation">
     <nav>
       <div *ngFor="let link of links" class="clarin-header-link-wrapper">
-        <a *ngIf="!link.items; else aTag" href="{{ link.path }}">{{ link.text }}</a>
-        <ng-template #aTag>
+        <a *ngIf="!link.children || !link.children.length; else buttonTag" href="{{ link.page }}">{{ link.text }}</a>
+        <ng-template #buttonTag>
           <button class="clarin-header-dropdown-button" (click)="toggleSubmenuClass($event)">
             {{ link.text }}
             <img src="/assets/images/menu-arrow-down.svg" />
             <img src="/assets/images/menu-arrow-down-white.svg" />
           </button>
           <div class="clarin-header-subnav">
-            <a *ngFor="let subNav of link.items" href="{{ subNav.path }}" class="clarin-header-subnav-item">{{ subNav.text }}</a>
+            <a *ngFor="let subNav of link.children" href="{{ subNav.page }}" class="clarin-header-subnav-item">{{ subNav.text }}</a>
           </div>
         </ng-template>        
       </div>
