@@ -14,8 +14,8 @@
 
   <div class="clarin-top-header-right">
     <div class="clarin-top-header-search">
-      <input type="text" />
-      <button type="button" (click)="submitSearch()">
+      <input #searchField type="text" />
+      <button type="button" (click)="submitSearch(searchField)">
         {{ 'header.search' | translate }}
         <img src="../../assets/images/search-icon.svg" width="14" height="14" />
         <img src="../../assets/images/search-icon-blue.svg" width="14" height="14" />

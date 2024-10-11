@@ -8,20 +8,24 @@
     </div>
 
     <nav class="clarinFooter__Navigation">
-      <div *ngFor="let category of footerMenus; let i = index">
-        <!-- <div class="clarinFooter__NavCategoryTitle">
-          <a *ngIf="footerLinks[category.key].sectionUrl; else withoutLink" href="{{ footerLinks[category.key].sectionUrl }}">{{ footerLinks[category.key].sectionTitle }}</a>
-          <ng-template #withoutLink>
-            {{ footerLinks[category.key].sectionTitle }}
-          </ng-template>
-        </div> -->
-        
+      <div *ngFor="let category of footerMenus; let i = index">        
         <div *ngIf="category.items_tree.length">
-          <div *ngFor="let link of category.items_tree">
-            <a *ngIf="link.is_link; else button" href="{{ link.external_url ? link.external_url : link.page }}" target="{{ link.external_url ? '_blank' : '' }}">{{ link.text }}</a>
-            <ng-template #button>
-              <div *ngIf="link.attrs.template" [innerHTML]="link.attrs.template"></div>
-            </ng-template>
+          <div *ngFor="let link of category.items_tree" class="clarinFooter__NavCategory">
+            <div [ngClass]="[link.attrs.is_title ? 'clarinFooter__NavCategoryTitle' : 'clarinFooter__NavCategorySubtitle']">
+              <a *ngIf="link.is_link; else withoutLink" href="{{ link.external_url || link.page }}" target="{{ link.external_url ? '_blank' : ''}}">{{ link.text }}</a>
+              <ng-template #withoutLink>
+                <span>{{ link.text }}</span>
+              </ng-template>
+            </div>
+
+            <div *ngIf="link.children?.length" class="clarinFooter__NavCategoryLinks">
+              <div *ngFor="let childLink of link.children">
+                <a *ngIf="childLink.external_url || childLink.page; else onlyText" href="{{ childLink.external_url || childLink.page }}" target="{{childLink.external_url ? '_blank' : ''}}">{{ childLink.text }}</a>
+                <ng-template #onlyText>
+                  {{ childLink.text }}
+                </ng-template>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -101,7 +101,7 @@ export class ClarinNavbarTopComponent implements OnInit, AfterViewInit {
     this.renderer[this.el.nativeElement.classList.contains('menuOpened') ? 'removeClass' : 'addClass'](this.el.nativeElement, 'menuOpened');
   }
 
-  submitSearch() {
-    console.log('search');
+  submitSearch(element: HTMLInputElement) {
+    window.location.href = (`https://www.clarin.hr/hr/pretraga/?q=${element.value}`);
   }
 }

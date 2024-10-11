@@ -19,7 +19,7 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
     this.menuServices.menusList.subscribe(result => {
       this.footerMenus = result;
-      this.footerMenus = this.footerMenus.menus.filter(menu => menu.reference.includes('FOOTER'));
+      this.footerMenus = this.footerMenus.menus.filter(menu => menu.reference.includes('FOOTER_REPO'));
       this.cdr.detectChanges();
     });
   }

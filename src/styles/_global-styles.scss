@@ -33,6 +33,10 @@ a {
     @media (max-width: 950px) {
         padding-top: 85px;
     }
+
+    @media (max-width: 480px) {
+        padding-top: 130px;
+    }
 }
 
 .alert.hide {

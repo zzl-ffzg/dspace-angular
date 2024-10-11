@@ -13,6 +13,10 @@
     z-index: 1;
     box-shadow: 0 -7px 12px 6px rgba(0, 0, 0, .2);
   }
+
+  @media (max-width: 480px) {
+    height: auto;
+  }
 }
 
 .clarin-logo-wrapper {
