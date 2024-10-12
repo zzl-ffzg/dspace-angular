@@ -3990,7 +3990,7 @@
 
   "repository.title": "DSpace Repository",
 
-  "repository.title.prefix": "LINDAT/CLARIAH-CZ Repository ",
+  "repository.title.prefix": "HR-CLARIN repozitorij ",
 
   "repository.title.prefixDSpace": "DSpace",
 
@@ -4201,113 +4201,113 @@
 
   "search.filters.applied.f.dateIssued.min": "Početni datum",
 
-  "search.filters.applied.f.dateSubmitted": "Date submitted",
+  "search.filters.applied.f.dateSubmitted": "Datum deponiranja",
 
   "search.filters.applied.f.discoverable": "Non-discoverable",
 
-  "search.filters.applied.f.entityType": "Item Type",
+  "search.filters.applied.f.entityType": "Tip stavke",
 
-  "search.filters.applied.f.has_content_in_original_bundle": "Contain Files",
+  "search.filters.applied.f.has_content_in_original_bundle": "Sadrži datoteke",
 
-  "search.filters.applied.f.itemtype": "Type",
+  "search.filters.applied.f.itemtype": "Tip",
 
   "search.filters.applied.f.namedresourcetype": "Status",
 
-  "search.filters.applied.f.subject": "Subject",
+  "search.filters.applied.f.subject": "Tema",
 
-  "search.filters.applied.f.submitter": "Submitter",
+  "search.filters.applied.f.submitter": "Deponent",
 
   "search.filters.applied.f.jobTitle": "Job Title",
 
-  "search.filters.applied.f.birthDate.max": "End birth date",
+  "search.filters.applied.f.birthDate.max": "Krajnji datum rođenja",
 
-  "search.filters.applied.f.birthDate.min": "Start birth date",
+  "search.filters.applied.f.birthDate.min": "Najraniji datum rođenja",
 
-  "search.filters.applied.f.supervisedBy": "Supervised by",
+  "search.filters.applied.f.supervisedBy": "Nadgledao",
 
-  "search.filters.applied.f.withdrawn": "Withdrawn",
+  "search.filters.applied.f.withdrawn": "Povučeno",
 
-  "search.filters.applied.f.rights": "Rights",
+  "search.filters.applied.f.rights": "Prava",
 
-  "search.filters.applied.f.language": "Language (ISO)",
+  "search.filters.applied.f.language": "Jezik (ISO)",
 
-  "search.filters.applied.f.items_owning_community": "Community",
+  "search.filters.applied.f.items_owning_community": "Zajednica",
 
-  "search.filters.applied.f.publisher": "Publisher",
+  "search.filters.applied.f.publisher": "Izdavač",
 
-  "search.filters.filter.author.head": "Author",
+  "search.filters.filter.author.head": "Autor",
 
-  "search.filters.filter.author.placeholder": "Author name",
+  "search.filters.filter.author.placeholder": "Ime autora",
 
-  "search.filters.filter.author.label": "Search author name",
+  "search.filters.filter.author.label": "Pronađi ime autora",
 
-  "search.filters.filter.birthDate.head": "Birth Date",
+  "search.filters.filter.birthDate.head": "Datum rođenja",
 
-  "search.filters.filter.birthDate.placeholder": "Birth Date",
+  "search.filters.filter.birthDate.placeholder": "Datum rođenja",
 
-  "search.filters.filter.birthDate.label": "Search birth date",
+  "search.filters.filter.birthDate.label": "Pronađi datum rođenja",
 
-  "search.filters.filter.collapse": "Collapse filter",
+  "search.filters.filter.collapse": "Sažmi filtar",
 
-  "search.filters.filter.creativeDatePublished.head": "Date Published",
+  "search.filters.filter.creativeDatePublished.head": "Datum objave",
 
-  "search.filters.filter.creativeDatePublished.placeholder": "Date Published",
+  "search.filters.filter.creativeDatePublished.placeholder": "Datum objave",
 
-  "search.filters.filter.creativeDatePublished.label": "Search date published",
+  "search.filters.filter.creativeDatePublished.label": "Pronađi datum objave",
 
-  "search.filters.filter.creativeWorkEditor.head": "Editor",
+  "search.filters.filter.creativeWorkEditor.head": "Urednik",
 
-  "search.filters.filter.creativeWorkEditor.placeholder": "Editor",
+  "search.filters.filter.creativeWorkEditor.placeholder": "Urednik",
 
-  "search.filters.filter.creativeWorkEditor.label": "Search editor",
+  "search.filters.filter.creativeWorkEditor.label": "Pronađi urednika",
 
-  "search.filters.filter.creativeWorkKeywords.head": "Subject",
+  "search.filters.filter.creativeWorkKeywords.head": "Tema",
 
-  "search.filters.filter.creativeWorkKeywords.placeholder": "Subject",
+  "search.filters.filter.creativeWorkKeywords.placeholder": "Tema",
 
-  "search.filters.filter.creativeWorkKeywords.label": "Search subject",
+  "search.filters.filter.creativeWorkKeywords.label": "Pronađi temu",
 
-  "search.filters.filter.creativeWorkPublisher.head": "Publisher",
+  "search.filters.filter.creativeWorkPublisher.head": "Izdavač",
 
-  "search.filters.filter.creativeWorkPublisher.placeholder": "Publisher",
+  "search.filters.filter.creativeWorkPublisher.placeholder": "Izdavač",
 
-  "search.filters.filter.creativeWorkPublisher.label": "Search publisher",
+  "search.filters.filter.creativeWorkPublisher.label": "Pronađi izdavača",
 
-  "search.filters.filter.dateIssued.head": "Date",
+  "search.filters.filter.dateIssued.head": "Datum",
 
-  "search.filters.filter.dateIssued.max.placeholder": "Maximum Date",
+  "search.filters.filter.dateIssued.max.placeholder": "Najkasniji datum",
 
-  "search.filters.filter.dateIssued.max.label": "End",
+  "search.filters.filter.dateIssued.max.label": "Kraj",
 
-  "search.filters.filter.dateIssued.min.placeholder": "Minimum Date",
+  "search.filters.filter.dateIssued.min.placeholder": "Najraniji datum",
 
-  "search.filters.filter.dateIssued.min.label": "Start",
+  "search.filters.filter.dateIssued.min.label": "Početak",
 
-  "search.filters.filter.dateSubmitted.head": "Date submitted",
+  "search.filters.filter.dateSubmitted.head": "Datum deponiranja",
 
-  "search.filters.filter.dateSubmitted.placeholder": "Date submitted",
+  "search.filters.filter.dateSubmitted.placeholder": "Datum deponiranja",
 
-  "search.filters.filter.dateSubmitted.label": "Search date submitted",
+  "search.filters.filter.dateSubmitted.label": "Pronađi datum deponiranja",
 
   "search.filters.filter.discoverable.head": "Non-discoverable",
 
-  "search.filters.filter.withdrawn.head": "Withdrawn",
+  "search.filters.filter.withdrawn.head": "Povučeno",
 
-  "search.filters.filter.entityType.head": "Item Type",
+  "search.filters.filter.entityType.head": "Tip stavke",
 
-  "search.filters.filter.entityType.placeholder": "Item Type",
+  "search.filters.filter.entityType.placeholder": "Tip stavke",
 
-  "search.filters.filter.entityType.label": "Search item type",
+  "search.filters.filter.entityType.label": "Pronađi tip stavke",
 
-  "search.filters.filter.expand": "Expand filter",
+  "search.filters.filter.expand": "Proširi filtar",
 
-  "search.filters.filter.has_content_in_original_bundle.head": "Contain Files",
+  "search.filters.filter.has_content_in_original_bundle.head": "Sadrži datoteke",
 
-  "search.filters.filter.itemtype.head": "Type",
+  "search.filters.filter.itemtype.head": "Tip",
 
-  "search.filters.filter.itemtype.placeholder": "Type",
+  "search.filters.filter.itemtype.placeholder": "Tip",
 
-  "search.filters.filter.itemtype.label": "Search type",
+  "search.filters.filter.itemtype.label": "Pronađi tip",
 
   "search.filters.filter.jobTitle.head": "Job Title",
 
@@ -4315,101 +4315,101 @@
 
   "search.filters.filter.jobTitle.label": "Search job title",
 
-  "search.filters.filter.knowsLanguage.head": "Known language",
+  "search.filters.filter.knowsLanguage.head": "Poznavani jezik",
 
-  "search.filters.filter.knowsLanguage.placeholder": "Known language",
+  "search.filters.filter.knowsLanguage.placeholder": "Poznavani jezik",
 
-  "search.filters.filter.knowsLanguage.label": "Search known language",
+  "search.filters.filter.knowsLanguage.label": "Pronađi poznavani jezik",
 
   "search.filters.filter.namedresourcetype.head": "Status",
 
   "search.filters.filter.namedresourcetype.placeholder": "Status",
 
-  "search.filters.filter.namedresourcetype.label": "Search status",
+  "search.filters.filter.namedresourcetype.label": "Pronađi status",
 
-  "search.filters.filter.objectpeople.head": "People",
+  "search.filters.filter.objectpeople.head": "Osobe",
 
-  "search.filters.filter.objectpeople.placeholder": "People",
+  "search.filters.filter.objectpeople.placeholder": "Osobe",
 
-  "search.filters.filter.objectpeople.label": "Search people",
+  "search.filters.filter.objectpeople.label": "Pronađi osobe",
 
-  "search.filters.filter.organizationAddressCountry.head": "Country",
+  "search.filters.filter.organizationAddressCountry.head": "Država",
 
-  "search.filters.filter.organizationAddressCountry.placeholder": "Country",
+  "search.filters.filter.organizationAddressCountry.placeholder": "Država",
 
-  "search.filters.filter.organizationAddressCountry.label": "Search country",
+  "search.filters.filter.organizationAddressCountry.label": "Pronađi državu",
 
-  "search.filters.filter.organizationAddressLocality.head": "City",
+  "search.filters.filter.organizationAddressLocality.head": "Grad",
 
-  "search.filters.filter.organizationAddressLocality.placeholder": "City",
+  "search.filters.filter.organizationAddressLocality.placeholder": "Grad",
 
-  "search.filters.filter.organizationAddressLocality.label": "Search city",
+  "search.filters.filter.organizationAddressLocality.label": "Pronađi grad",
 
-  "search.filters.filter.organizationFoundingDate.head": "Date Founded",
+  "search.filters.filter.organizationFoundingDate.head": "Datum osnivanja",
 
-  "search.filters.filter.organizationFoundingDate.placeholder": "Date Founded",
+  "search.filters.filter.organizationFoundingDate.placeholder": "Datum osnivanja",
 
-  "search.filters.filter.organizationFoundingDate.label": "Search date founded",
+  "search.filters.filter.organizationFoundingDate.label": "Pronađi datum osnivanja",
 
-  "search.filters.filter.scope.head": "Scope",
+  "search.filters.filter.scope.head": "Područje",
 
-  "search.filters.filter.scope.placeholder": "Scope filter",
+  "search.filters.filter.scope.placeholder": "Filtar područja",
 
-  "search.filters.filter.scope.label": "Search scope filter",
+  "search.filters.filter.scope.label": "Pronađi filtar područja",
 
-  "search.filters.filter.show-less": "Collapse",
+  "search.filters.filter.show-less": "Sažmi",
 
-  "search.filters.filter.show-more": "Show more",
+  "search.filters.filter.show-more": "Prikaži više",
 
-  "search.filters.filter.subject.head": "Subject",
+  "search.filters.filter.subject.head": "Tema",
 
-  "search.filters.filter.subject.placeholder": "Subject",
+  "search.filters.filter.subject.placeholder": "Tema",
 
-  "search.filters.filter.subject.label": "Search subject",
+  "search.filters.filter.subject.label": "Pronađi temu",
 
-  "search.filters.filter.submitter.head": "Submitter",
+  "search.filters.filter.submitter.head": "Deponent",
 
-  "search.filters.filter.submitter.placeholder": "Submitter",
+  "search.filters.filter.submitter.placeholder": "Deponent",
 
-  "search.filters.filter.submitter.label": "Search submitter",
+  "search.filters.filter.submitter.label": "Pronađi deponenta",
 
-  "search.filters.filter.show-tree": "Browse {{ name }} tree",
+  "search.filters.filter.show-tree": "Pregledah {{ name }} hijerarhiju",
 
-  "search.filters.filter.supervisedBy.head": "Supervised By",
+  "search.filters.filter.supervisedBy.head": "Nadgledao",
 
-  "search.filters.filter.rights.head": "Rights",
+  "search.filters.filter.rights.head": "Prava",
 
-  "search.filters.filter.language.head": "Language (ISO)",
+  "search.filters.filter.language.head": "Jezik (ISO)",
 
-  "search.filters.filter.items_owning_community.head": "Community",
+  "search.filters.filter.items_owning_community.head": "Zajednica",
 
-  "search.filters.filter.supervisedBy.placeholder": "Supervised By",
+  "search.filters.filter.supervisedBy.placeholder": "Nadgledao",
 
-  "search.filters.filter.supervisedBy.label": "Search Supervised By",
+  "search.filters.filter.supervisedBy.label": "Pronađi nadglednika",
 
-  "search.filters.filter.rights.label": "Search rights",
+  "search.filters.filter.rights.label": "Pronađi prava",
 
-  "search.filters.filter.rights.placeholder": "Rights",
+  "search.filters.filter.rights.placeholder": "Prava",
 
-  "search.filters.filter.items_owning_community.label": "Search community",
+  "search.filters.filter.items_owning_community.label": "Pronađi zajednicu",
 
-  "search.filters.filter.items_owning_community.placeholder": "Community",
+  "search.filters.filter.items_owning_community.placeholder": "Zajednica",
 
-  "search.filters.entityType.JournalIssue": "Journal Issue",
+  "search.filters.entityType.JournalIssue": "Izdanje časopisa",
 
-  "search.filters.entityType.JournalVolume": "Journal Volume",
+  "search.filters.entityType.JournalVolume": "Svezak časopisa",
 
-  "search.filters.entityType.OrgUnit": "Organizational Unit",
+  "search.filters.entityType.OrgUnit": "Organizacijska jedinica",
 
-  "search.filters.has_content_in_original_bundle.true": "Yes",
+  "search.filters.has_content_in_original_bundle.true": "Da",
 
-  "search.filters.has_content_in_original_bundle.false": "No",
+  "search.filters.has_content_in_original_bundle.false": "Ne",
 
-  "search.filters.discoverable.true": "No",
+  "search.filters.discoverable.true": "Ne",
 
-  "search.filters.discoverable.false": "Yes",
+  "search.filters.discoverable.false": "Da",
 
-  "search.filters.namedresourcetype.Archived": "Archived",
+  "search.filters.namedresourcetype.Archived": "Arhivirano",
 
   "search.filters.namedresourcetype.Validation": "Validation",
 
@@ -4419,85 +4419,85 @@
 
   "search.filters.namedresourcetype.Workspace": "Workspace",
 
-  "search.filters.withdrawn.true": "Yes",
+  "search.filters.withdrawn.true": "Da",
 
-  "search.filters.withdrawn.false": "No",
+  "search.filters.withdrawn.false": "Ne",
 
-  "search.filters.filter.language.label": "Search language",
+  "search.filters.filter.language.label": "Pronađi jezik",
 
-  "search.filters.filter.language.placeholder": "Language",
+  "search.filters.filter.language.placeholder": "Jezik",
 
-  "search.filters.head": "Limit your search",
+  "search.filters.head": "Ograničite pretragu",
 
-  "search.filters.reset": "Reset filters",
+  "search.filters.reset": "Očistite filtre",
 
-  "search.filters.search.submit": "Submit",
+  "search.filters.search.submit": "Predaj",
 
-  "search.form.search": "Search",
+  "search.form.search": "Pretraži",
 
-  "search.form.search_dspace": "All repository",
+  "search.form.search_dspace": "Cijeli repozitorij",
 
-  "search.form.scope.all": "All of DSpace",
+  "search.form.scope.all": "Cijeli DSpace",
 
-  "search.results.head": "Search Results",
+  "search.results.head": "Rezultati pretrage",
 
-  "search.results.no-results": "Your search returned no results. Having trouble finding what you're looking for? Try putting",
+  "search.results.no-results": "Pretraga nije dala rezultate. Imate li problema s pretragom? Pokušajte obuhvatiti pretragu",
 
-  "search.results.no-results-link": "quotes around it",
+  "search.results.no-results-link": "navodnim znakovima",
 
-  "search.results.empty": "Your search returned no results.",
+  "search.results.empty": "Pretraga nije dala rezultate.",
 
   "search.results.view-result": "View",
 
-  "search.results.response.500": "An error occurred during query execution, please try again later",
+  "search.results.response.500": "Dogodila se pogreška prilikom izvršavanja upita. Molimo, pokušajte kasnije",
 
-  "default.search.results.head": "Search Results",
+  "default.search.results.head": "Rezultati pretrage",
 
-  "default-relationships.search.results.head": "Search Results",
+  "default-relationships.search.results.head": "Rezultati pretrage",
 
-  "search.sidebar.close": "Back to results",
+  "search.sidebar.close": "Natrag na rezultate",
 
-  "search.sidebar.filters.title": "Filters",
+  "search.sidebar.filters.title": "Filtri",
 
-  "search.sidebar.open": "Search Tools",
+  "search.sidebar.open": "Alati za pretraživanje",
 
-  "search.sidebar.results": "results",
+  "search.sidebar.results": "rezultati",
 
-  "search.sidebar.settings.rpp": "Results per page",
+  "search.sidebar.settings.rpp": "Rezultata po stranici",
 
-  "search.sidebar.settings.sort-by": "Sort By",
+  "search.sidebar.settings.sort-by": "Poredaj po",
 
-  "search.sidebar.settings.title": "Settings",
+  "search.sidebar.settings.title": "Postavke",
 
-  "search.view-switch.show-detail": "Show detail",
+  "search.view-switch.show-detail": "Pokaži detalje",
 
-  "search.view-switch.show-grid": "Show as grid",
+  "search.view-switch.show-grid": "Prikaži kao mrežu",
 
-  "search.view-switch.show-list": "Show as list",
+  "search.view-switch.show-list": "Prikaži kao popis",
 
-  "sorting.ASC": "Ascending",
+  "sorting.ASC": "Uzlazno",
 
-  "sorting.DESC": "Descending",
+  "sorting.DESC": "Silazno",
 
-  "sorting.dc.title.ASC": "Title Asc",
+  "sorting.dc.title.ASC": "Uzlazno po nazivu",
 
-  "sorting.dc.title.DESC": "Title Desc",
+  "sorting.dc.title.DESC": "Silazno po nazivu",
 
-  "sorting.score.ASC": "Least Relevant",
+  "sorting.score.ASC": "Od najmanje relevantnog",
 
-  "sorting.score.DESC": "Most Relevant",
+  "sorting.score.DESC": "Od najrelevantnijeg",
 
-  "sorting.dc.date.issued.ASC": "Date Issued Asc",
+  "sorting.dc.date.issued.ASC": "Uzlazno po datumu objave",
 
-  "sorting.dc.date.issued.DESC": "Date Issued Desc",
+  "sorting.dc.date.issued.DESC": "Silazni po datumu objave",
 
-  "sorting.dc.date.accessioned.ASC": "Accessioned Date Ascending",
+  "sorting.dc.date.accessioned.ASC": "Uzlazno po datumu deponiranja",
 
-  "sorting.dc.date.accessioned.DESC": "Accessioned Date Descending",
+  "sorting.dc.date.accessioned.DESC": "Silazno po datumu deponiranja",
 
-  "sorting.lastModified.ASC": "Last modified Ascending",
+  "sorting.lastModified.ASC": "Uzlazno po datumu zadnje izmjene",
 
-  "sorting.lastModified.DESC": "Last modified Descending",
+  "sorting.lastModified.DESC": "Silazno po datumu zadnje izmjene",
 
   "statistics.title": "Statistics",
 
