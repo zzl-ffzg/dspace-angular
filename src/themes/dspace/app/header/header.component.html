@@ -3,7 +3,7 @@
   <div class="clarin-navigation">
     <nav>
       <div *ngFor="let link of links" class="clarin-header-link-wrapper">
-        <a *ngIf="!link.children || !link.children.length; else buttonTag" href="{{ link.page }}" [ngClass]="{'active': link.is_active}">{{ link.text }}</a>
+        <a *ngIf="!link.children || !link.children.length; else buttonTag" href="{{ link.page }}" [ngClass]="{'active': link.attrs?.is_repository}">{{ link.text }}</a>
         <ng-template #buttonTag>
           <button class="clarin-header-dropdown-button" (click)="toggleSubmenuClass($event)">
             {{ link.text }}

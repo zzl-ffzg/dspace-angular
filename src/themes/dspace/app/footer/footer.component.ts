@@ -27,7 +27,6 @@ export class FooterComponent implements OnInit {
             const numberFromSecond = parseInt(b.reference.match(/\d+$/), 10);
             return numberFromFirst - numberFromSecond;
           });
-        console.log(this.footerMenus)
         this.cdr.detectChanges();
       }
     });
