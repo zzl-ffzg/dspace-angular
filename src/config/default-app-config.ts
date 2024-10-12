@@ -225,6 +225,7 @@ export class DefaultAppConfig implements AppConfig {
     { code: 'it', label: 'Italiano', active: true },
     { code: 'lv', label: 'Latviešu', active: true },
     { code: 'hu', label: 'Magyar', active: true },
+    { code: 'hr', label: 'Hrvatski', active: true },
     { code: 'nl', label: 'Nederlands', active: true },
     { code: 'pl', label: 'Polski', active: true },
     { code: 'pt-PT', label: 'Português', active: true },

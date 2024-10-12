@@ -19,8 +19,17 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
     this.menuServices.menusList.subscribe(result => {
       this.footerMenus = result;
-      this.footerMenus = this.footerMenus.menus.filter(menu => menu.reference.includes('FOOTER_REPO'));
-      this.cdr.detectChanges();
+      if (this.footerMenus.menus) {
+        this.footerMenus = this.footerMenus.menus
+          .filter(menu => menu.reference.includes('FOOTER_REPO'))
+          .sort((a, b) => {
+            const numberFromFirst = parseInt(a.reference.match(/\d+$/), 10);
+            const numberFromSecond = parseInt(b.reference.match(/\d+$/), 10);
+            return numberFromFirst - numberFromSecond;
+          });
+        console.log(this.footerMenus)
+        this.cdr.detectChanges();
+      }
     });
   }
 }

@@ -39,7 +39,7 @@ export class ClarinNavbarTopComponent implements OnInit, AfterViewInit {
   repositoryPath = '';
 
   currentLanguage = this.localeService.getCurrentLanguageCode();
-  nextLanguage = ['en', 'cs'].find(lang => lang !== this.currentLanguage);
+  nextLanguage = ['en', 'hr'].find(lang => lang !== this.currentLanguage);
 
   ngOnInit(): void {
     const queryParams = this.route.snapshot.queryParams;

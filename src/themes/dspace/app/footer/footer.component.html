@@ -24,6 +24,13 @@
                 <ng-template #onlyText>
                   {{ childLink.text }}
                 </ng-template>
+
+                <ul *ngIf="childLink.children?.length">
+                  <li *ngFor="let subNav of childLink.children">
+                    <a *ngIf="subNav.external_url || subNav.page; else justText" href="{{ subNav.external_url || subNav.page }}" target="{{subNav.external_url ? '_blank' : ''}}">{{ subNav.text }}</a>
+                    <ng-template #justText>{{ subNav.text }}</ng-template>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -33,13 +40,9 @@
 
     <div class="clarinFooter__Logos">
       <div>
-        <a href="https://www.clarin.eu/content/certified-centres" target="_blank"><img src="/assets/images/b-centre.png" alt="{{ 'CLARIN CENTRE B' | translate }}" /></a>
+        <!-- <a href="https://www.clarin.eu/content/certified-centres" target="_blank"><img src="/assets/images/b-centre.png" alt="{{ 'CLARIN CENTRE B' | translate }}" /></a> -->
         <a href="https://www.clarin.eu/content/knowledge-centres" target="_blank"><img src="/assets/images/k-centre.png" alt="{{ 'CLARIN CENTRE K' | translate }}" style="filter:brightness(0.88)" /></a>
-        <a href="https://www.coretrustseal.org/wp-content/uploads/2019/08/LINDAT-CLARIN.pdf" target="_blank"><img src="/assets/images/core-trust-seal-mono.png" alt="{{ 'CoreTrustSeal Certification' | translate }}" /></a>
-      </div>
-
-      <div>
-        <a href="https://lindat.cz/user/login"><img src="/assets/images/LINDAT-CLARIAH-cz-gray.svg" alt="{{ 'Home Page' | translate }}" /></a>
+        <!-- <a href="https://www.coretrustseal.org/wp-content/uploads/2019/08/LINDAT-CLARIN.pdf" target="_blank"><img src="/assets/images/core-trust-seal-mono.png" alt="{{ 'CoreTrustSeal Certification' | translate }}" /></a> -->
       </div>
     </div>
     

@@ -92,6 +92,13 @@
         transition: opacity .2s linear;
       }
     }
+
+    a:not(.clarin-header-subnav-item).active {
+      color: var(--clarin-red);
+      &:after {
+        opacity: 1;
+      }
+    }
   }
 }
 
