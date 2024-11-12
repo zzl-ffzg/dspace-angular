@@ -640,17 +640,17 @@
 
   "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.table.edit": "Ukloni / Dodaj",
 
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.table.edit.buttons.remove": "Ukloni člana s imenom \"{{ime}}\"",
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.table.edit.buttons.remove": "Ukloni člana s imenom \"{{name}}\"",
 
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.notification.success.addMember": "Uspješno dodan član: \"{{ime}}\"",
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.notification.success.addMember": "Uspješno dodan član: \"{{name}}\"",
 
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.notification.failure.addMember": "Dodavanje člana nije uspjelo: \"{{ime}}\"",
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.notification.failure.addMember": "Dodavanje člana nije uspjelo: \"{{name}}\"",
 
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.notification.success.deleteMember": "Uspješno brisanje člana: \"{{ime}}\"",
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.notification.success.deleteMember": "Uspješno brisanje člana: \"{{name}}\"",
 
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.notification.failure.deleteMember": "Brisanje člana nije uspjelo: \"{{ime}}\"",
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.notification.failure.deleteMember": "Brisanje člana nije uspjelo: \"{{name}}\"",
 
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.table.edit.buttons.add": "Dodaj člana s imenom \"{{ime}}\"",
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.table.edit.buttons.add": "Dodaj člana s imenom \"{{name}}\"",
 
   "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.notification.failure.noActiveGroup": "Nema trenutno aktivne grupe, prvo dodajte ime.",
 
