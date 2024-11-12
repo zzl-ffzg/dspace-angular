@@ -4,17 +4,17 @@
 
   "401.link.home-page": "Na početnu stranicu",
 
-  "401.unauthorized": "niste autorizirani",
+  "401.unauthorized": "Niste autorizirani.",
 
   "403.help": "Nemate dozvolu za pristup ovoj stranici. Vratite se na početnu stranicu klikom na gumb ispod.",
 
   "403.link.home-page": "Na početnu stranicu",
 
-  "403.forbidden": "zabranjeno",
+  "403.forbidden": "Zabranjeno",
 
   "500.page-internal-server-error": "Servis nije dostupan",
 
-  "500.help": "Poslužitelj trenutno nije u mogućnosti obraditi Vaš zahtjev radi održavanja ili problema s kapacitetima. Molimo, pokušajte kasnije.",
+  "500.help": "Poslužitelj trenutno nije u mogućnosti obraditi vaš zahtjev zbog održavanja ili problema s kapacitetima. Molimo pokušajte kasnije.",
 
   "500.link.home-page": "Na početnu stranicu",
 
@@ -22,23 +22,23 @@
 
   "404.link.home-page": "Na početnu stranicu",
 
-  "404.page-not-found": "stranica nije pronađena",
+  "404.page-not-found": "Stranica nije pronađena.",
 
-  "error-page.description.401": "niste autorizirani",
+  "error-page.description.401": "Niste autorizirani.",
 
-  "error-page.description.403": "zabranjeno",
+  "error-page.description.403": "Zabranjeno",
 
-  "error-page.description.500": "Servis nije dostupan",
+  "error-page.description.500": "Servis nije dostupan.",
 
-  "error-page.description.404": "stranica nije pronađena",
+  "error-page.description.404": "Stranica nije pronađena.",
 
-  "error-page.orcid.generic-error": "Pojavila se greška tijekom prijave putem ORCID-a. Provjerite jeste li podijelili svoju adresu e-pošte ORCID korisničkog računa email s DSpaceom. Ako se greška ponovi, kontaktirajte administratora",
+  "error-page.orcid.generic-error": "Pojavila se greška tijekom prijave putem ORCID-a. Provjerite jeste li podijelili svoju adresu e-pošte ORCID korisničkog računa s DSpaceom. Ako se greška ponovi, kontaktirajte administratora.",
 
   "access-status.embargo.listelement.badge": "Embargo",
 
   "access-status.metadata.only.listelement.badge": "Samo metapodaci",
 
-  "access-status.open.access.listelement.badge": "Otvoreni pristup",
+  "access-status.open.access.listelement.badge": "Otvoren pristup",
 
   "access-status.restricted.listelement.badge": "Ograničen pristup",
 
@@ -222,7 +222,7 @@
 
   "admin.access-control.bulk-access.breadcrumbs": "Bulk Access Management",
 
-  "administrativeBulkAccess.search.results.head": "Search Results",
+  "administrativeBulkAccess.search.results.head": "Rezultati pretraživanja",
 
   "admin.access-control.bulk-access": "Bulk Access Management",
 
@@ -536,7 +536,7 @@
 
   "admin.search.title": "Administrative Search",
 
-  "administrativeView.search.results.head": "Administrative Search",
+  "administrativeView.search.results.head": "Administrativno pretraživanje",
 
   "admin.workflow.breadcrumbs": "Administer Workflow",
 
@@ -602,73 +602,73 @@
 
   "admin.metadata-import.page.validateOnly.hint": "When selected, the uploaded CSV will be validated. You will receive a report of detected changes, but no changes will be saved.",
 
-  "advanced-workflow-action.rating.form.rating.label": "Rating",
+  "advanced-workflow-action.rating.form.rating.label": "Ocjena",
 
-  "advanced-workflow-action.rating.form.rating.error": "You must rate the item",
+  "advanced-workflow-action.rating.form.rating.error": "Morate ocijeniti stavku.",
 
-  "advanced-workflow-action.rating.form.review.label": "Review",
+  "advanced-workflow-action.rating.form.review.label": "Pregled",
 
-  "advanced-workflow-action.rating.form.review.error": "You must enter a review to submit this rating",
+  "advanced-workflow-action.rating.form.review.error": "Morate unijeti recenziju kako biste poslali ovu ocjenu.",
 
-  "advanced-workflow-action.rating.description": "Please select a rating below",
+  "advanced-workflow-action.rating.description": "Molimo da odaberete ocjenu ispod.",
 
-  "advanced-workflow-action.rating.description-requiredDescription": "Please select a rating below and also add a review",
+  "advanced-workflow-action.rating.description-requiredDescription": "Molimo da odaberete ocjenu ispod i da također dodate recenziju.",
 
-  "advanced-workflow-action.select-reviewer.description-single": "Please select a single reviewer below before submitting",
+  "advanced-workflow-action.select-reviewer.description-single": "Prije slanja odaberite jednog od recenzenata ispod.",
 
-  "advanced-workflow-action.select-reviewer.description-multiple": "Please select one or more reviewers below before submitting",
+  "advanced-workflow-action.select-reviewer.description-multiple": "Prije slanja odaberite jednog ili više recenzenata ispod.",
 
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.head": "EPeople",
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.head": "EOsobe",
 
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.search.head": "Add EPeople",
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.search.head": "Dodaj EOsobe",
 
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.button.see-all": "Browse All",
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.button.see-all": "Pregledaj sve",
 
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.headMembers": "Current Members",
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.headMembers": "Trenutni članovi",
 
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.search.button": "Search",
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.search.button": "Traži",
 
   "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.table.id": "ID",
 
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.table.name": "Name",
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.table.name": "Ime",
 
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.table.identity": "Identity",
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.table.identity": "Identitet",
 
   "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.table.email": "Email",
 
   "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.table.netid": "NetID",
 
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.table.edit": "Remove / Add",
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.table.edit": "Ukloni / Dodaj",
 
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.table.edit.buttons.remove": "Remove member with name \"{{name}}\"",
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.table.edit.buttons.remove": "Ukloni člana s imenom \"{{ime}}\"",
 
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.notification.success.addMember": "Successfully added member: \"{{name}}\"",
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.notification.success.addMember": "Uspješno dodan član: \"{{ime}}\"",
 
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.notification.failure.addMember": "Failed to add member: \"{{name}}\"",
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.notification.failure.addMember": "Dodavanje člana nije uspjelo: \"{{ime}}\"",
 
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.notification.success.deleteMember": "Successfully deleted member: \"{{name}}\"",
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.notification.success.deleteMember": "Uspješno brisanje člana: \"{{ime}}\"",
 
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.notification.failure.deleteMember": "Failed to delete member: \"{{name}}\"",
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.notification.failure.deleteMember": "Brisanje člana nije uspjelo: \"{{ime}}\"",
 
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.table.edit.buttons.add": "Add member with name \"{{name}}\"",
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.table.edit.buttons.add": "Dodaj člana s imenom \"{{ime}}\"",
 
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.notification.failure.noActiveGroup": "No current active group, submit a name first.",
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.notification.failure.noActiveGroup": "Nema trenutno aktivne grupe, prvo dodajte ime.",
 
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.no-members-yet": "No members in group yet, search and add.",
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.no-members-yet": "U grupi još nema članova, pretražite i dodajte.",
 
-  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.no-items": "No EPeople found in that search",
+  "advanced-workflow-action-select-reviewer.groups.form.reviewers-list.no-items": "U pretrazi nisu pronađene EOsobe",
 
-  "advanced-workflow-action.select-reviewer.no-reviewer-selected.error": "No reviewer selected.",
+  "advanced-workflow-action.select-reviewer.no-reviewer-selected.error": "Nije odabran recenzent.",
 
-  "admin.batch-import.page.validateOnly.hint": "When selected, the uploaded ZIP will be validated. You will receive a report of detected changes, but no changes will be saved.",
+  "admin.batch-import.page.validateOnly.hint": "Kad se odabere, učitani ZIP bit će potvrđen. Primit ćete izvješće o otkrivenim promjenama, ali promjene neće biti spremljene.",
 
-  "admin.batch-import.page.remove": "remove",
+  "admin.batch-import.page.remove": "Ukloni",
 
   "auth.errors.invalid-user": "Neispravna adresa e-pošte ili lozinka.",
 
-  "auth.messages.expired": "Vaša sesija je istekla. Molimo, prijavite se ponovo.",
+  "auth.messages.expired": "Vaša sesija je istekla. Molimo da se prijavite ponovo.",
 
-  "auth.messages.token-refresh-failed": "Osvježavanje tokena Vaše sesije nije uspjelo. Molimo, prijavite se ponovo.",
+  "auth.messages.token-refresh-failed": "Osvježavanje tokena Vaše sesije nije uspjelo. Molimo da se prijavite ponovo.",
 
   "bitstream.download.page": "Trenutno se preuzima {{bitstream}}...",
 
@@ -714,11 +714,11 @@
 
   "clarin.license.agreement.button.agree": "SLAŽEM SE",
 
-  "clarin.license.agreement.warning": ">Klikom na donji gumb, ja, POTPISNIK s gornjim ID-em, suglasan sam s LICENCIJAMA koje ograničavaju upotrebu traženih BITSTREAMOVA.",
+  "clarin.license.agreement.warning": "Klikom na donji gumb, ja, POTPISNIK s gornjim ID-em, suglasan sam s LICENCIJAMA koje ograničavaju upotrebu traženih BITSTREAMOVA.",
 
   "clarin.license.agreement.notification.error.required.info": "Morate unijeti sve tražene informacije.",
 
-  "clarin.license.agreement.error.message.cannot.download": ["Nešto je pošlo krivo i ne možete preuzeti ovaj bitstream. Molimo, kontaktirajte", " korisničku podršku."],
+  "clarin.license.agreement.error.message.cannot.download": ["Nešto je pošlo krivo i ne možete preuzeti ovaj bitstream. Molimo da kontaktirate", " korisničku podršku."],
 
   "clarin.license.agreement.notification.check.email": "Primit ćete e-poštu s poveznicom za preuzimanje.",
 
@@ -731,9 +731,9 @@
 
   "clarin.license.all-page.title": "Dostupne licencije",
 
-  "clarin.license.all-page.source": "Source:",
+  "clarin.license.all-page.source": "Izvor:",
 
-  "clarin.license.all-page.labels": "Labels:",
+  "clarin.license.all-page.labels": "Oznake:",
 
   "clarin.license.all-page.extra-information": "Potrebne su dodatne informacije:",
 
@@ -741,101 +741,101 @@
 
 
 
-  "bitstream.edit.authorizations.link": "Edit bitstream's Policies",
+  "bitstream.edit.authorizations.link": "Uredite Pravila bitstreama",
 
-  "bitstream.edit.authorizations.title": "Edit bitstream's Policies",
+  "bitstream.edit.authorizations.title": "Uredite Pravila bitstreama",
 
-  "bitstream.edit.return": "Back",
+  "bitstream.edit.return": "Natrag",
 
   "bitstream.edit.bitstream": "Bitstream: ",
 
-  "bitstream.edit.form.description.hint": "Optionally, provide a brief description of the file, for example \"<i>Main article</i>\" or \"<i>Experiment data readings</i>\".",
+  "bitstream.edit.form.description.hint": "Po želji navedite primjerice kratak opis datoteke \"<i>Glavni članal</i>\" or \"<i>Očitavanje podataka eksperimenta</i>\".",
 
-  "bitstream.edit.form.description.label": "Description",
+  "bitstream.edit.form.description.label": "Opis",
 
-  "bitstream.edit.form.embargo.hint": "The first day from which access is allowed. <b>This date cannot be modified on this form.</b> To set an embargo date for a bitstream, go to the <i>Item Status</i> tab, click <i>Authorizations...</i>, create or edit the bitstream's <i>READ</i> policy, and set the <i>Start Date</i> as desired.",
+  "bitstream.edit.form.embargo.hint": "Prvi dan od kojeg je dozvoljen pristup. <b>Ovaj se datum ne može promijeniti na ovom obrascu.</b> Kako biste postavili datum embarga za bitstream, idite na tab <i>Status stavke</i>, kliknite <i>Autorizacije...</i>, kreirajte ili editirajte politiku bitstreamova <i>READ</i> i postavite željeni <i>Početni datum</i>.",
 
-  "bitstream.edit.form.embargo.label": "Embargo until specific date",
+  "bitstream.edit.form.embargo.label": "Embargo do određenog datuma",
 
-  "bitstream.edit.form.fileName.hint": "Change the filename for the bitstream. Note that this will change the display bitstream URL, but old links will still resolve as long as the sequence ID does not change.",
+  "bitstream.edit.form.fileName.hint": "Promijenite naziv datoteke za bitstream. Imajte na umu da će ovo promijeniti URL bitstreama za prikaz, ali će se stare veze i dalje rješavati sve dok se ID sekvence ne promijeni.",
 
-  "bitstream.edit.form.fileName.label": "Filename",
+  "bitstream.edit.form.fileName.label": "Naziv datoteke",
 
-  "bitstream.edit.form.newFormat.label": "Describe new format",
+  "bitstream.edit.form.newFormat.label": "Opišite novi format",
 
-  "bitstream.edit.form.newFormat.hint": "The application you used to create the file, and the version number (for example, \"<i>ACMESoft SuperApp version 1.5</i>\").",
+  "bitstream.edit.form.newFormat.hint": "Aplikacija koju ste upotrijebili za kreiranje datoteke i broj verzije (na primjer, \"<i>ACMESoft SuperApp verzija 1.5</i>\").",
 
-  "bitstream.edit.form.primaryBitstream.label": "Primary bitstream",
+  "bitstream.edit.form.primaryBitstream.label": "Primarni bitstream",
 
-  "bitstream.edit.form.selectedFormat.hint": "If the format is not in the above list, <b>select \"format not in list\" above</b> and describe it under \"Describe new format\".",
+  "bitstream.edit.form.selectedFormat.hint": "Ako se format ne nalazi na gornjem popisu, <b>odaberite \"format nije na popisu\" gore</b> i opišite ga pod \"Opišite novi format\".",
 
-  "bitstream.edit.form.selectedFormat.label": "Selected Format",
+  "bitstream.edit.form.selectedFormat.label": "Odabrani format",
 
-  "bitstream.edit.form.selectedFormat.unknown": "Format not in list",
+  "bitstream.edit.form.selectedFormat.unknown": "Format nije na popisu",
 
-  "bitstream.edit.notifications.error.format.title": "An error occurred saving the bitstream's format",
+  "bitstream.edit.notifications.error.format.title": "Došlo je do pogreške prilikom spremanja formata bitstreama",
 
-  "bitstream.edit.notifications.error.primaryBitstream.title": "An error occurred saving the primary bitstream",
+  "bitstream.edit.notifications.error.primaryBitstream.title": "Došlo je do pogreške prilikom spremanja primarnog bitstreama",
 
-  "bitstream.edit.form.iiifLabel.label": "IIIF Label",
+  "bitstream.edit.form.iiifLabel.label": "IIIF oznaka",
 
-  "bitstream.edit.form.iiifLabel.hint": "Canvas label for this image. If not provided default label will be used.",
+  "bitstream.edit.form.iiifLabel.hint": "Canvas oznaka za ovu sliku. Ako nije navedena, koristit će se zadana oznaka.",
 
-  "bitstream.edit.form.iiifToc.label": "IIIF Table of Contents",
+  "bitstream.edit.form.iiifToc.label": "IIIF sadržaj",
 
-  "bitstream.edit.form.iiifToc.hint": "Adding text here makes this the start of a new table of contents range.",
+  "bitstream.edit.form.iiifToc.hint": "Dodavanje teksta ovamo počinje se s novim rasponom sadržaja.",
 
-  "bitstream.edit.form.iiifWidth.label": "IIIF Canvas Width",
+  "bitstream.edit.form.iiifWidth.label": "IIIF širina canvasa",
 
-  "bitstream.edit.form.iiifWidth.hint": "The canvas width should usually match the image width.",
+  "bitstream.edit.form.iiifWidth.hint": "Širina canvasa bi se trebala poklapati sa širinom slike.",
 
-  "bitstream.edit.form.iiifHeight.label": "IIIF Canvas Height",
+  "bitstream.edit.form.iiifHeight.label": "IIIF visina canvasa",
 
-  "bitstream.edit.form.iiifHeight.hint": "The canvas height should usually match the image height.",
+  "bitstream.edit.form.iiifHeight.hint": "Visina canvasa bi se trebala poklapati s visinom slike.",
 
-  "bitstream.edit.notifications.saved.content": "Your changes to this bitstream were saved.",
+  "bitstream.edit.notifications.saved.content": "Vaše su promjene za ovaj bitstream spremljene.",
 
-  "bitstream.edit.notifications.saved.title": "Bitstream saved",
+  "bitstream.edit.notifications.saved.title": "Bitstream spremljen",
 
-  "bitstream.edit.title": "Edit bitstream",
+  "bitstream.edit.title": "Uredi bitstream",
 
-  "bitstream-request-a-copy.alert.canDownload1": "You already have access to this file. If you want to download the file, click ",
+  "bitstream-request-a-copy.alert.canDownload1": "Već imate pristup ovoj datoteci. Ako želite preuzeti datoteku, kliknite ",
 
-  "bitstream-request-a-copy.alert.canDownload2": "here",
+  "bitstream-request-a-copy.alert.canDownload2": "ovamo",
 
-  "bitstream-request-a-copy.header": "Request a copy of the file",
+  "bitstream-request-a-copy.header": "Zatražite kopiju datoteke",
 
-  "bitstream-request-a-copy.intro": "Enter the following information to request a copy for the following item: ",
+  "bitstream-request-a-copy.intro": "Unesite sljedeće informacije kako biste zatražili kopiju sljedeće stavke: ",
 
-  "bitstream-request-a-copy.intro.bitstream.one": "Requesting the following file: ",
+  "bitstream-request-a-copy.intro.bitstream.one": "Zahtjev za sljedećom datotekom: ",
 
-  "bitstream-request-a-copy.intro.bitstream.all": "Requesting all files. ",
+  "bitstream-request-a-copy.intro.bitstream.all": "Zahtjev za svim datotekama. ",
 
-  "bitstream-request-a-copy.name.label": "Name *",
+  "bitstream-request-a-copy.name.label": "Ime *",
 
-  "bitstream-request-a-copy.name.error": "The name is required",
+  "bitstream-request-a-copy.name.error": "Ime je obavezno",
 
-  "bitstream-request-a-copy.email.label": "Your e-mail address *",
+  "bitstream-request-a-copy.email.label": "Vaša adresa e-pošte *",
 
-  "bitstream-request-a-copy.email.hint": "This email address is used for sending the file.",
+  "bitstream-request-a-copy.email.hint": "Ova se adresa e-pošte koristi za slanje datoteke.",
 
-  "bitstream-request-a-copy.email.error": "Please enter a valid email address.",
+  "bitstream-request-a-copy.email.error": "Molimo da unesete valjanu adresu e-pošte.",
 
-  "bitstream-request-a-copy.allfiles.label": "Files",
+  "bitstream-request-a-copy.allfiles.label": "Datoteke",
 
-  "bitstream-request-a-copy.files-all-false.label": "Only the requested file",
+  "bitstream-request-a-copy.files-all-false.label": "Samo zatražena datoteka",
 
-  "bitstream-request-a-copy.files-all-true.label": "All files (of this item) in restricted access",
+  "bitstream-request-a-copy.files-all-true.label": "Sve datoteke (ove stavke) u ograničenom pristupu",
 
-  "bitstream-request-a-copy.message.label": "Message",
+  "bitstream-request-a-copy.message.label": "Poruka",
 
-  "bitstream-request-a-copy.return": "Back",
+  "bitstream-request-a-copy.return": "Natrag",
 
-  "bitstream-request-a-copy.submit": "Request copy",
+  "bitstream-request-a-copy.submit": "Zatraži kopiju",
 
-  "bitstream-request-a-copy.submit.success": "The item request was submitted successfully.",
+  "bitstream-request-a-copy.submit.success": "Zahtjev za stavkom je uspješno predan.",
 
-  "bitstream-request-a-copy.submit.error": "Something went wrong with submitting the item request.",
+  "bitstream-request-a-copy.submit.error": "Nešto je pošlo po zlu pri predaji zahtjeva.",
 
   "browse.back.all-results": "Svi rezultati pregledavanja",
 
@@ -919,7 +919,7 @@
 
   "browse.startsWith.months.november": "studeni",
 
-  "browse.startsWith.months.october": "October",
+  "browse.startsWith.months.october": "listopad",
 
   "browse.startsWith.months.september": "rujan",
 
@@ -943,11 +943,11 @@
 
   "chips.remove": "Remove chip",
 
-  "claimed-approved-search-result-list-element.title": "Approved",
+  "claimed-approved-search-result-list-element.title": "Odobreno",
 
-  "claimed-declined-search-result-list-element.title": "Rejected, sent back to submitter",
+  "claimed-declined-search-result-list-element.title": "Odbijeno, vraćeno podnositelju",
 
-  "claimed-declined-task-search-result-list-element.title": "Declined, sent back to Review Manager's workflow",
+  "claimed-declined-task-search-result-list-element.title": "Odbijeno, vraćeno upravitelju pregleda",
 
   "contact-us.breadcrumbs": "Kontaktirajte nas",
 
@@ -955,362 +955,362 @@
 
   "contact-us.description": "Administratotre DSpacea možete kontaktirati putem:",
 
-  "contact-us.form": "On-line obrazac: ",
+  "contact-us.form": "Mrežni obrazac: ",
 
   "contact-us.feedback": "Povratne informacije",
 
   "contact-us.email": "E-pošta: ",
 
-  "collection.create.head": "Create a Collection",
+  "collection.create.head": "Kreirajte zbirku",
 
-  "collection.create.notifications.success": "Successfully created the Collection",
+  "collection.create.notifications.success": "Uspješno kreirana zbirka",
 
-  "collection.create.sub-head": "Create a Collection for Community {{ parent }}",
+  "collection.create.sub-head": "Kreirajte zbirku za zajednicu {{ parent }}",
 
-  "collection.curate.header": "Curate Collection: {{collection}}",
+  "collection.curate.header": "Organiziraj zbirku: {{collection}}",
 
-  "collection.delete.cancel": "Cancel",
+  "collection.delete.cancel": "Otkaži",
 
-  "collection.delete.confirm": "Confirm",
+  "collection.delete.confirm": "Potvrdi",
 
-  "collection.delete.processing": "Deleting",
+  "collection.delete.processing": "Brisanje",
 
-  "collection.delete.head": "Delete Collection",
+  "collection.delete.head": "Obriši zbirku",
 
-  "collection.delete.notification.fail": "Collection could not be deleted",
+  "collection.delete.notification.fail": "Zbirka ne može biti obrisana",
 
-  "collection.delete.notification.success": "Successfully deleted collection",
+  "collection.delete.notification.success": "Uspješno izbrisana zbirka",
 
-  "collection.delete.text": "Are you sure you want to delete collection \"{{ dso }}\"",
+  "collection.delete.text": "Jeste li sigurni da želite obrisati zbirku? \"{{ dso }}\"",
 
-  "collection.edit.delete": "Delete this collection",
+  "collection.edit.delete": "Obriši ovu zbirku",
 
-  "collection.edit.head": "Edit Collection",
+  "collection.edit.head": "Uredi zbirku",
 
-  "collection.edit.breadcrumbs": "Edit Collection",
+  "collection.edit.breadcrumbs": "Uredi zbirku",
 
-  "collection.edit.tabs.mapper.head": "Item Mapper",
+  "collection.edit.tabs.mapper.head": "Mapiranje stavki",
 
-  "collection.edit.tabs.item-mapper.title": "Collection Edit - Item Mapper",
+  "collection.edit.tabs.item-mapper.title": "Uređivanje zbirke - mapiranje stavki",
 
-  "collection.edit.item-mapper.cancel": "Cancel",
+  "collection.edit.item-mapper.cancel": "Otkaži",
 
-  "collection.edit.item-mapper.collection": "Collection: \"<b>{{name}}</b>\"",
+  "collection.edit.item-mapper.collection": "Zbirka: \"<b>{{name}}</b>\"",
 
-  "collection.edit.item-mapper.confirm": "Map selected items",
+  "collection.edit.item-mapper.confirm": "Odabrane stavke iz mape",
 
-  "collection.edit.item-mapper.description": "This is the item mapper tool that allows collection administrators to map items from other collections into this collection. You can search for items from other collections and map them, or browse the list of currently mapped items.",
+  "collection.edit.item-mapper.description": "Ovo je alat za mapiranje stavki koji omogućuje administratorima zbirke da u svoju zbirku mapiraju stavke iz drugih zbirki. Te stavke možete pretražiti iz drugih zbirku i mapirati ih ili pregledavati popis trenutno mapiranih stavki.",
 
-  "collection.edit.item-mapper.head": "Item Mapper - Map Items from Other Collections",
+  "collection.edit.item-mapper.head": "Mapiranje stavki - Stavke mapirane iz drugih zbirki",
 
-  "collection.edit.item-mapper.no-search": "Please enter a query to search",
+  "collection.edit.item-mapper.no-search": "Molimo unesite upit za pretragu",
 
-  "collection.edit.item-mapper.notifications.map.error.content": "Errors occurred for mapping of {{amount}} items.",
+  "collection.edit.item-mapper.notifications.map.error.content": "Došlo je do pogreški pri mapiranju {{amount}} stavki.",
 
-  "collection.edit.item-mapper.notifications.map.error.head": "Mapping errors",
+  "collection.edit.item-mapper.notifications.map.error.head": "Greške mapiranja",
 
-  "collection.edit.item-mapper.notifications.map.success.content": "Successfully mapped {{amount}} items.",
+  "collection.edit.item-mapper.notifications.map.success.content": "Uspješno mapirano {{amount}} stavki.",
 
-  "collection.edit.item-mapper.notifications.map.success.head": "Mapping completed",
+  "collection.edit.item-mapper.notifications.map.success.head": "Mapiranje završeno",
 
-  "collection.edit.item-mapper.notifications.unmap.error.content": "Errors occurred for removing the mappings of {{amount}} items.",
+  "collection.edit.item-mapper.notifications.unmap.error.content": "Došlo je do pogreški pri uklanjanju mapiranih {{amount}} stavki.",
 
-  "collection.edit.item-mapper.notifications.unmap.error.head": "Remove mapping errors",
+  "collection.edit.item-mapper.notifications.unmap.error.head": "Ukloni greške mapiranja",
 
-  "collection.edit.item-mapper.notifications.unmap.success.content": "Successfully removed the mappings of {{amount}} items.",
+  "collection.edit.item-mapper.notifications.unmap.success.content": "Uspješno uklonjena mapiranja {{amount}} stavki.",
 
-  "collection.edit.item-mapper.notifications.unmap.success.head": "Remove mapping completed",
+  "collection.edit.item-mapper.notifications.unmap.success.head": "Završeno uklanjanje mapiranja",
 
-  "collection.edit.item-mapper.remove": "Remove selected item mappings",
+  "collection.edit.item-mapper.remove": "Ukloni odabrana mapiranja stavki",
 
-  "collection.edit.item-mapper.search-form.placeholder": "Search items...",
+  "collection.edit.item-mapper.search-form.placeholder": "Pretraži stavke...",
 
-  "collection.edit.item-mapper.tabs.browse": "Browse mapped items",
+  "collection.edit.item-mapper.tabs.browse": "Pregledaj mapirane stavke",
 
-  "collection.edit.item-mapper.tabs.map": "Map new items",
+  "collection.edit.item-mapper.tabs.map": "Mapiraj nove stavke",
 
-  "collection.edit.logo.delete.title": "Delete logo",
+  "collection.edit.logo.delete.title": "Izbriši logotip",
 
-  "collection.edit.logo.delete-undo.title": "Undo delete",
+  "collection.edit.logo.delete-undo.title": "Poništi brisanje",
 
-  "collection.edit.logo.label": "Collection logo",
+  "collection.edit.logo.label": "Logotip zbirke",
 
-  "collection.edit.logo.notifications.add.error": "Uploading Collection logo failed. Please verify the content before retrying.",
+  "collection.edit.logo.notifications.add.error": "Prijenos logotipa zbirke nije uspio. Molimo provjerite sadržaj prije ponovnog pokušaja.",
 
-  "collection.edit.logo.notifications.add.success": "Upload Collection logo successful.",
+  "collection.edit.logo.notifications.add.success": "Uspješan prijenos logotipa zbirke.",
 
-  "collection.edit.logo.notifications.delete.success.title": "Logo deleted",
+  "collection.edit.logo.notifications.delete.success.title": "Logotip izbrisan",
 
-  "collection.edit.logo.notifications.delete.success.content": "Successfully deleted the collection's logo",
+  "collection.edit.logo.notifications.delete.success.content": "Uspješno izbrisan logotip zbirke",
 
-  "collection.edit.logo.notifications.delete.error.title": "Error deleting logo",
+  "collection.edit.logo.notifications.delete.error.title": "Pogreška pri brisanju logotipa",
 
-  "collection.edit.logo.upload": "Drop a Collection Logo to upload",
+  "collection.edit.logo.upload": "Za prijenos povucite logotip zbirke",
 
-  "collection.edit.notifications.success": "Successfully edited the Collection",
+  "collection.edit.notifications.success": "Zbirka uspješno uređena",
 
-  "collection.edit.return": "Back",
+  "collection.edit.return": "Natrag",
 
-  "collection.edit.tabs.access-control.head": "Access Control",
+  "collection.edit.tabs.access-control.head": "Kontrola pristupa",
 
-  "collection.edit.tabs.access-control.title": "Collection Edit - Access Control",
+  "collection.edit.tabs.access-control.title": "Uređivanje zbirke - Kontrola pristupa",
 
-  "collection.edit.tabs.curate.head": "Curate",
+  "collection.edit.tabs.curate.head": "Organiziraj",
 
-  "collection.edit.tabs.curate.title": "Collection Edit - Curate",
+  "collection.edit.tabs.curate.title": "Uređivanje zbirke - Organizacija",
 
-  "collection.edit.tabs.authorizations.head": "Authorizations",
+  "collection.edit.tabs.authorizations.head": "Autorizacije",
 
-  "collection.edit.tabs.authorizations.title": "Collection Edit - Authorizations",
+  "collection.edit.tabs.authorizations.title": "Uređivanje zbirke - Autorizacije",
 
-  "collection.edit.item.authorizations.load-bundle-button": "Load more bundles",
+  "collection.edit.item.authorizations.load-bundle-button": "Učitaj više paketa",
 
-  "collection.edit.item.authorizations.load-more-button": "Load more",
+  "collection.edit.item.authorizations.load-more-button": "Učitaj više",
 
-  "collection.edit.item.authorizations.show-bitstreams-button": "Show bitstream policies for bundle",
+  "collection.edit.item.authorizations.show-bitstreams-button": "Prikaži politike bitstreama za paket",
 
-  "collection.edit.tabs.metadata.head": "Edit Metadata",
+  "collection.edit.tabs.metadata.head": "Uredi metapodatke",
 
-  "collection.edit.tabs.metadata.title": "Collection Edit - Metadata",
+  "collection.edit.tabs.metadata.title": "Uređivanje zbirke - Metapodaci",
 
-  "collection.edit.tabs.roles.head": "Assign Roles",
+  "collection.edit.tabs.roles.head": "Dodijeli uloge",
 
-  "collection.edit.tabs.roles.title": "Collection Edit - Roles",
+  "collection.edit.tabs.roles.title": "Uređivanje zbirke - Uloge",
 
-  "collection.edit.tabs.source.external": "This collection harvests its content from an external source",
+  "collection.edit.tabs.source.external": "Ova zbirka prikuplja svoj sadržaj iz vanjskog izvora",
 
-  "collection.edit.tabs.source.form.errors.oaiSource.required": "You must provide a set id of the target collection.",
+  "collection.edit.tabs.source.form.errors.oaiSource.required": "Morate navesti postavljeni ID ciljne zbirke.",
 
-  "collection.edit.tabs.source.form.harvestType": "Content being harvested",
+  "collection.edit.tabs.source.form.harvestType": "Sadržaj se prikuplja",
 
-  "collection.edit.tabs.source.form.head": "Configure an external source",
+  "collection.edit.tabs.source.form.head": "Konfigurirajte vanjski izvor",
 
-  "collection.edit.tabs.source.form.metadataConfigId": "Metadata Format",
+  "collection.edit.tabs.source.form.metadataConfigId": "Format metapodataka",
 
-  "collection.edit.tabs.source.form.oaiSetId": "OAI specific set id",
+  "collection.edit.tabs.source.form.oaiSetId": "OAI ID određenog skupa",
 
-  "collection.edit.tabs.source.form.oaiSource": "OAI Provider",
+  "collection.edit.tabs.source.form.oaiSource": "OAI Pružatelj usluga",
 
-  "collection.edit.tabs.source.form.options.harvestType.METADATA_AND_BITSTREAMS": "Harvest metadata and bitstreams (requires ORE support)",
+  "collection.edit.tabs.source.form.options.harvestType.METADATA_AND_BITSTREAMS": "Prikupi metapodatke i bitstreamove (zahtijeva ORE podršku)",
 
-  "collection.edit.tabs.source.form.options.harvestType.METADATA_AND_REF": "Harvest metadata and references to bitstreams (requires ORE support)",
+  "collection.edit.tabs.source.form.options.harvestType.METADATA_AND_REF": "Prikupi metapodatke i reference prema bitstreamovima (zahtijeva ORE podršku)",
 
-  "collection.edit.tabs.source.form.options.harvestType.METADATA_ONLY": "Harvest metadata only",
+  "collection.edit.tabs.source.form.options.harvestType.METADATA_ONLY": "Prikupi samo metapodatke",
 
-  "collection.edit.tabs.source.head": "Content Source",
+  "collection.edit.tabs.source.head": "Izvor sadržaja",
 
-  "collection.edit.tabs.source.notifications.discarded.content": "Your changes were discarded. To reinstate your changes click the 'Undo' button",
+  "collection.edit.tabs.source.notifications.discarded.content": "Vaše su promjene odbačene. Za ponovno vraćanje vaših promjena kliknite gumb 'Poništi'.",
 
-  "collection.edit.tabs.source.notifications.discarded.title": "Changes discarded",
+  "collection.edit.tabs.source.notifications.discarded.title": "Promjene odbačene",
 
-  "collection.edit.tabs.source.notifications.invalid.content": "Your changes were not saved. Please make sure all fields are valid before you save.",
+  "collection.edit.tabs.source.notifications.invalid.content": "Vaše promjene nisu spremljene. Molimo da prije spremanja provjerite jesu li sva polja valjana.",
 
-  "collection.edit.tabs.source.notifications.invalid.title": "Metadata invalid",
+  "collection.edit.tabs.source.notifications.invalid.title": "Metapodaci nisu valjani",
 
-  "collection.edit.tabs.source.notifications.saved.content": "Your changes to this collection's content source were saved.",
+  "collection.edit.tabs.source.notifications.saved.content": "Vaše promjene u izvoru sadržaja ove zbirke su spremljene.",
 
-  "collection.edit.tabs.source.notifications.saved.title": "Content Source saved",
+  "collection.edit.tabs.source.notifications.saved.title": "Spremljen izvor sadržaja",
 
-  "collection.edit.tabs.source.title": "Collection Edit - Content Source",
+  "collection.edit.tabs.source.title": "Uređivanje zbirke - Izvor sadržaja",
 
-  "collection.edit.template.add-button": "Add",
+  "collection.edit.template.add-button": "Dodaj",
 
-  "collection.edit.template.breadcrumbs": "Item template",
+  "collection.edit.template.breadcrumbs": "Predložak stavke",
 
-  "collection.edit.template.cancel": "Cancel",
+  "collection.edit.template.cancel": "Otkaži",
 
-  "collection.edit.template.delete-button": "Delete",
+  "collection.edit.template.delete-button": "Izbriši",
 
-  "collection.edit.template.edit-button": "Edit",
+  "collection.edit.template.edit-button": "Uredi",
 
-  "collection.edit.template.error": "An error occurred retrieving the template item",
+  "collection.edit.template.error": "Došlo je do pogreške prilikom dohvaćanja stavke predloška.",
 
-  "collection.edit.template.head": "Edit Template Item for Collection \"{{ collection }}\"",
+  "collection.edit.template.head": "Uredite stavku predložak za zbirku \"{{ collection }}\"",
 
-  "collection.edit.template.label": "Template item",
+  "collection.edit.template.label": "Stavka predložak",
 
-  "collection.edit.template.loading": "Loading template item...",
+  "collection.edit.template.loading": "Učitavanje stavke predloška...",
 
-  "collection.edit.template.notifications.delete.error": "Failed to delete the item template",
+  "collection.edit.template.notifications.delete.error": "Brisanje stavke predloška nije uspjelo",
 
-  "collection.edit.template.notifications.delete.success": "Successfully deleted the item template",
+  "collection.edit.template.notifications.delete.success": "Stavka predložak uspješno obrisana",
 
-  "collection.edit.template.title": "Edit Template Item",
+  "collection.edit.template.title": "Uredi stavku predložak",
 
-  "collection.form.abstract": "Short Description",
+  "collection.form.abstract": "Kratki opis",
 
-  "collection.form.description": "Introductory text (HTML)",
+  "collection.form.description": "Uvodni tekst (HTML)",
 
-  "collection.form.errors.title.required": "Please enter a collection name",
+  "collection.form.errors.title.required": "Molimo da unesete ime zbirke",
 
-  "collection.form.license": "License",
+  "collection.form.license": "Licencija",
 
-  "collection.form.provenance": "Provenance",
+  "collection.form.provenance": "Podrijetlo",
 
-  "collection.form.rights": "Copyright text (HTML)",
+  "collection.form.rights": "Tekst o autorskim pravima (HTML)",
 
-  "collection.form.tableofcontents": "News (HTML)",
+  "collection.form.tableofcontents": "Novosti (HTML)",
 
-  "collection.form.title": "Name",
+  "collection.form.title": "Ime",
 
-  "collection.form.entityType": "Entity Type",
+  "collection.form.entityType": "Tip stavke",
 
-  "collection.listelement.badge": "Collection",
+  "collection.listelement.badge": "Zbirka",
 
-  "collection.page.browse.recent.head": "Recent Submissions",
+  "collection.page.browse.recent.head": "Nedavni unosi",
 
-  "collection.page.browse.recent.empty": "No items to show",
+  "collection.page.browse.recent.empty": "Nema stavki za prikaz",
 
-  "collection.page.edit": "Edit this collection",
+  "collection.page.edit": "Uredi ovu zbirku",
 
-  "collection.page.handle": "Permanent URI for this collection",
+  "collection.page.handle": "Trajni URI za ovu zbirku",
 
-  "collection.page.license": "License",
+  "collection.page.license": "Licencija",
 
-  "collection.page.news": "News",
+  "collection.page.news": "Novosti",
 
-  "collection.select.confirm": "Confirm selected",
+  "collection.select.confirm": "Potvrdi odabrano",
 
-  "collection.select.empty": "No collections to show",
+  "collection.select.empty": "Nema zbirki za prikaz",
 
-  "collection.select.table.title": "Title",
+  "collection.select.table.title": "Naslov",
 
-  "collection.source.controls.head": "Harvest Controls",
+  "collection.source.controls.head": "Kontrole prikupljanja",
 
-  "collection.source.controls.test.submit.error": "Something went wrong with initiating the testing of the settings",
+  "collection.source.controls.test.submit.error": "Nešto je pošlo po zlu prilikom pokretanja testiranja postavki.",
 
-  "collection.source.controls.test.failed": "The script to test the settings has failed",
+  "collection.source.controls.test.failed": "Skripta za provjeru postavki nije uspjela.",
 
-  "collection.source.controls.test.completed": "The script to test the settings has successfully finished",
+  "collection.source.controls.test.completed": "Skripta za provjeru postavki uspješno je završila.",
 
-  "collection.source.controls.test.submit": "Test configuration",
+  "collection.source.controls.test.submit": "Testna konfiguracija",
 
-  "collection.source.controls.test.running": "Testing configuration...",
+  "collection.source.controls.test.running": "Konfiguracija testiranja...",
 
-  "collection.source.controls.import.submit.success": "The import has been successfully initiated",
+  "collection.source.controls.import.submit.success": "Uvoz je uspješno pokrenut.",
 
-  "collection.source.controls.import.submit.error": "Something went wrong with initiating the import",
+  "collection.source.controls.import.submit.error": "Nešto je pošlo po zlu prilikom pokretanja uvoza.",
 
-  "collection.source.controls.import.submit": "Import now",
+  "collection.source.controls.import.submit": "Uvezi sada",
 
-  "collection.source.controls.import.running": "Importing...",
+  "collection.source.controls.import.running": "Uvoz...",
 
-  "collection.source.controls.import.failed": "An error occurred during the import",
+  "collection.source.controls.import.failed": "Došlo je do pogreške prilikom uvoza.",
 
-  "collection.source.controls.import.completed": "The import completed",
+  "collection.source.controls.import.completed": "Uvoz je završen.",
 
-  "collection.source.controls.reset.submit.success": "The reset and reimport has been successfully initiated",
+  "collection.source.controls.reset.submit.success": "Poništavanje i ponovni uvoz uspješno su pokrenuti.",
 
-  "collection.source.controls.reset.submit.error": "Something went wrong with initiating the reset and reimport",
-  "collection.source.controls.reset.failed": "An error occurred during the reset and reimport",
+  "collection.source.controls.reset.submit.error": "Nešto je pošlo po zlu prilikom pokretanja poništavanja i ponovnog uvoza.",
+  "collection.source.controls.reset.failed": "Došlo je do pogreške prilikom poništavanja i ponovnog uvoza.",
 
-  "collection.source.controls.reset.completed": "The reset and reimport completed",
+  "collection.source.controls.reset.completed": "Poništavanje i ponovni uvoz su završeni.",
 
-  "collection.source.controls.reset.submit": "Reset and reimport",
+  "collection.source.controls.reset.submit": "Poništavanje i ponovni uvoz",
 
-  "collection.source.controls.reset.running": "Resetting and reimporting...",
+  "collection.source.controls.reset.running": "Poništavanje i ponovni uvoz...",
 
-  "collection.source.controls.harvest.status": "Harvest status:",
+  "collection.source.controls.harvest.status": "Status prikupljanja:",
 
-  "collection.source.controls.harvest.start": "Harvest start time:",
+  "collection.source.controls.harvest.start": "Vrijeme početka prikupljanja:",
 
-  "collection.source.controls.harvest.last": "Last time harvested:",
+  "collection.source.controls.harvest.last": "Vrijeme posljednjeg prikupljanja:",
 
-  "collection.source.controls.harvest.message": "Harvest info:",
+  "collection.source.controls.harvest.message": "Informacije o prikupljanju:",
 
   "collection.source.controls.harvest.no-information": "N/A",
 
-  "collection.source.update.notifications.error.content": "The provided settings have been tested and didn't work.",
+  "collection.source.update.notifications.error.content": "Navedene postavke su testirane i nisu radile.",
 
-  "collection.source.update.notifications.error.title": "Server Error",
+  "collection.source.update.notifications.error.title": "Greška servera",
 
-  "communityList.breadcrumbs": "Community List",
+  "communityList.breadcrumbs": "Popis zajednica",
 
-  "communityList.tabTitle": "Community List",
+  "communityList.tabTitle": "Popis zajednica",
 
-  "communityList.title": "List of Communities",
+  "communityList.title": "Popis zajednica",
 
-  "communityList.showMore": "Show More",
+  "communityList.showMore": "Prikaži više",
 
-  "community.create.head": "Create a Community",
+  "community.create.head": "Kreiraj zajednicu",
 
-  "community.create.notifications.success": "Successfully created the Community",
+  "community.create.notifications.success": "Zajednica uspješno kreirana",
 
-  "community.create.sub-head": "Create a Sub-Community for Community {{ parent }}",
+  "community.create.sub-head": "Kreirajte podzajednicu za zajednicu {{ parent }}",
 
-  "community.curate.header": "Curate Community: {{community}}",
+  "community.curate.header": "Organiziraj zajednicu: {{community}}",
 
-  "community.delete.cancel": "Cancel",
+  "community.delete.cancel": "Otkaži",
 
-  "community.delete.confirm": "Confirm",
+  "community.delete.confirm": "Potvrdi",
 
-  "community.delete.processing": "Deleting...",
+  "community.delete.processing": "Brisanje...",
 
-  "community.delete.head": "Delete Community",
+  "community.delete.head": "Obriši zajednicu",
 
-  "community.delete.notification.fail": "Community could not be deleted",
+  "community.delete.notification.fail": "Zajednica ne može biti izbrisana.",
 
-  "community.delete.notification.success": "Successfully deleted community",
+  "community.delete.notification.success": "Uspješno izbrisana zajednica.",
 
-  "community.delete.text": "Are you sure you want to delete community \"{{ dso }}\"",
+  "community.delete.text": "Jeste li sigurni da želite izbrisati zajednicu \"{{ dso }}\"",
 
-  "community.edit.delete": "Delete this community",
+  "community.edit.delete": "Izbriši ovu zajednicu",
 
-  "community.edit.head": "Edit Community",
+  "community.edit.head": "Uredi zajednicu",
 
-  "community.edit.breadcrumbs": "Edit Community",
+  "community.edit.breadcrumbs": "Uredi zajednicu",
 
-  "community.edit.logo.delete.title": "Delete logo",
+  "community.edit.logo.delete.title": "Izbriši logotip",
 
-  "community.edit.logo.delete-undo.title": "Undo delete",
+  "community.edit.logo.delete-undo.title": "Poništi brisanje",
 
-  "community.edit.logo.label": "Community logo",
+  "community.edit.logo.label": "Logotip zajednice",
 
-  "community.edit.logo.notifications.add.error": "Uploading Community logo failed. Please verify the content before retrying.",
+  "community.edit.logo.notifications.add.error": "Prijenos logotipa zajednice nije uspio. Molimo provjerite sadržaj prije ponovnog pokušaja.",
 
-  "community.edit.logo.notifications.add.success": "Upload Community logo successful.",
+  "community.edit.logo.notifications.add.success": "Uspješan prijenos logotipa zajednice.",
 
-  "community.edit.logo.notifications.delete.success.title": "Logo deleted",
+  "community.edit.logo.notifications.delete.success.title": "Logotip izbrisan",
 
-  "community.edit.logo.notifications.delete.success.content": "Successfully deleted the community's logo",
+  "community.edit.logo.notifications.delete.success.content": "Uspješno izbrisan logotip zajednice",
 
-  "community.edit.logo.notifications.delete.error.title": "Error deleting logo",
+  "community.edit.logo.notifications.delete.error.title": "Pogreška pri brisanju logotipa",
 
-  "community.edit.logo.upload": "Drop a Community Logo to upload",
+  "community.edit.logo.upload": "Za prijenos povucite logotip zbirke",
 
-  "community.edit.notifications.success": "Successfully edited the Community",
+  "community.edit.notifications.success": "Zajednica uspješno uređena",
 
-  "community.edit.notifications.unauthorized": "You do not have privileges to make this change",
+  "community.edit.notifications.unauthorized": "Za ovu promjenu nemate ovlaštenja.",
 
-  "community.edit.notifications.error": "An error occured while editing the Community",
+  "community.edit.notifications.error": "Došlo je do greške prilikom uređivanja zajednice.",
 
-  "community.edit.return": "Back",
+  "community.edit.return": "Natrag",
 
-  "community.edit.tabs.curate.head": "Curate",
+  "community.edit.tabs.curate.head": "Organiziraj",
 
-  "community.edit.tabs.curate.title": "Community Edit - Curate",
+  "community.edit.tabs.curate.title": "Uređivanje zajednice - Organizacija",
 
-  "community.edit.tabs.access-control.head": "Access Control",
+  "community.edit.tabs.access-control.head": "Kontrola pristupa",
 
-  "community.edit.tabs.access-control.title": "Community Edit - Access Control",
+  "community.edit.tabs.access-control.title": "Uređivanje zajednice - Kontrola pristupa",
 
-  "community.edit.tabs.metadata.head": "Edit Metadata",
+  "community.edit.tabs.metadata.head": "Uređivanje metapodataka",
 
-  "community.edit.tabs.metadata.title": "Community Edit - Metadata",
+  "community.edit.tabs.metadata.title": "Uređivanje zajednice - Metapodaci",
 
-  "community.edit.tabs.roles.head": "Assign Roles",
+  "community.edit.tabs.roles.head": "Dodijeli uloge",
 
-  "community.edit.tabs.roles.title": "Community Edit - Roles",
+  "community.edit.tabs.roles.title": "Uređivanje zajednice - Uloge",
 
-  "community.edit.tabs.authorizations.head": "Authorizations",
+  "community.edit.tabs.authorizations.head": "Autorizacije",
 
-  "community.edit.tabs.authorizations.title": "Community Edit - Authorizations",
+  "community.edit.tabs.authorizations.title": "Uređivanje zajednice - Autorizacije",
 
-  "community.listelement.badge": "Community",
+  "community.listelement.badge": "Zajednica",
 
-  "comcol-role.edit.no-group": "None",
+  "comcol-role.edit.no-group": "Nema",
 
-  "comcol-role.edit.create": "Create",
+  "comcol-role.edit.create": "Kreiraj",
 
   "comcol-role.edit.create.error.title": "Failed to create a group for the '{{ role }}' role",
 
