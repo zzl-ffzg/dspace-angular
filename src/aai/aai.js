@@ -75,10 +75,10 @@
           'weight': 1000
         });
         djc.inlinemetadata.push({
-          'country': 'CZ',
-          'entityID': 'https://cas.cuni.cz/idp/shibboleth',
-          'geo': {'lat': '50.0705102', 'lon': '14.4198844'},
-          'title': 'Univerzita Karlova v Praze',
+          'country': 'HR',
+          'entityID': 'https://login.aaiedu.hr/shib/saml2/idp/metadata.php',
+          'geo': {'lat': '45.815399', 'lon': '15.966568'},
+          'title': 'AAI@EduHr Single Sign-On Service',
           'weight': -1000
         });
 
