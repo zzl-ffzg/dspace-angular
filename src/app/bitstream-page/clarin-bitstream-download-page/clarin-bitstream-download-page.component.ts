@@ -12,7 +12,8 @@ import { RequestService } from '../../core/data/request.service';
 import {
   DOWNLOAD_TOKEN_EXPIRED_EXCEPTION,
   HTTP_STATUS_UNAUTHORIZED,
-  MISSING_LICENSE_AGREEMENT_EXCEPTION
+  MISSING_LICENSE_AGREEMENT_EXCEPTION,
+  AUTHORIZATION_DENIED_EXCEPTION
 } from '../../core/shared/clarin/constants';
 import { RemoteDataBuildService } from '../../core/cache/builders/remote-data-build.service';
 import { hasValue, isEmpty, isNotEmpty, isNotNull, isUndefined } from '../../shared/empty.util';
@@ -87,7 +88,7 @@ export class ClarinBitstreamDownloadPageComponent implements OnInit {
         const clarinIsAuthorized$ = this.rdbService.buildFromRequestUUID(requestId);
         // Clarin authorization will check dtoken parameter from the request
         const dtoken = isNotEmpty(this.dtoken) ? '?dtoken=' + this.dtoken : '';
-        const isAuthorized$ = this.authorizationService.isAuthorized(FeatureID.CanDownload, isNotEmpty(bitstream) ? bitstream.self + dtoken : undefined);
+        const isAuthorized$ = this.authorizationService.isAuthorized(FeatureID.CanDownload, isNotEmpty(bitstream) ? bitstream.self + dtoken : undefined, undefined, false);
         const isLoggedIn$ = this.auth.isAuthenticated();
         return observableCombineLatest([clarinIsAuthorized$, isAuthorized$, isLoggedIn$, observableOf(bitstream)]);
       }),
@@ -166,6 +167,9 @@ export class ClarinBitstreamDownloadPageComponent implements OnInit {
             this.downloadStatus.next(DOWNLOAD_TOKEN_EXPIRED_EXCEPTION);
             return false;
           default:
+            if (requestEntry?.errorMessage && requestEntry?.errorMessage.startsWith(AUTHORIZATION_DENIED_EXCEPTION)) {
+              this.downloadStatus.next(AUTHORIZATION_DENIED_EXCEPTION);
+            }
             return false;
         }
       }

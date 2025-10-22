@@ -70,7 +70,12 @@ services:
       # handle binary port as per https://www.handle.net/hnr_support.html (5th paragraph)
     - published: 264${INSTANCE}
       target: 2641
-      host_ip: 127.0.0.1
+      protocol: tcp
+      host_ip: ${HOST_IP:-127.0.0.1}
+    - published: 264${INSTANCE}
+      target: 2641
+      protocol: udp
+      host_ip: ${HOST_IP:-127.0.0.1}
       # handle http port as per https://www.handle.net/hnr_support.html (5th paragraph)
     - published: 801${INSTANCE}
       target: 8010
@@ -80,8 +85,6 @@ services:
     volumes:
     - dspace_logs:/dspace/log
     - assetstore:/dspace/assetstore
-    # Mount DSpace's solr configs to a volume, so that we can share to 'dspacesolr' container (see below)
-    - solr_configs:/dspace/solr
     - handle_server:/dspace/handle-server
     - ./local.cfg:/dspace/config/local.cfg
     # Ensure that the database is ready BEFORE starting tomcat
@@ -93,14 +96,18 @@ services:
     - /bin/bash
     - '-c'
     # When customizing the namespace, add the following command to the entrypoint command below (after `while ...`):
-    # `pushd ../webapps && unlink server && ln -s /dspace/webapps/server/ 'repository#server' && popd`
+    # `pushd ../webapps && (unlink server || true) && (ln -s /dspace/webapps/server/ 'repository#server' || true) &&
+    # popd`
+    # The `(... || true)` condition is necessary to ensure the `popd` command runs at the end.
+    # It used to fail when the `server` folder did not exist in `/webapps`.
     # This will create a symlink from the webapps directory to the server directory with the custom namespace
     # (e.g. /dspace/webapps/server -> /dspace/webapps/repository#server)
     - |
       while (!</dev/tcp/dspacedb/543${INSTANCE}) > /dev/null 2>&1; do sleep 1; done;
+      pushd /usr/local/tomcat/webapps && (unlink server || true) && (ln -s /dspace/webapps/server/ `echo -n "${DSPACE_REST_NAMESPACE}" | sed -e 's#^/##' -e 'sx/x#x'` || true) && popd
       /dspace/bin/dspace database migrate force
-      custom_run.sh
       /dspace/bin/start-handle-server
+      ./custom_run.sh
   # DSpace database container
   dspacedb:
     restart: unless-stopped
@@ -128,9 +135,6 @@ services:
     restart: unless-stopped
     container_name: dspacesolr${INSTANCE}
     image: ${DSPACE_SOLR_IMAGE:-ufal/dspace-solr:dspace-7_x}
-    # Needs main 'dspace' container to start first to guarantee access to solr_configs
-    depends_on:
-    - dspace
     networks:
       dspacenet:
     ports:
@@ -141,9 +145,6 @@ services:
     tty: true
     working_dir: /var/solr/data
     volumes:
-    # Mount our "solr_configs" volume available under the Solr's configsets folder (in a 'dspace' subfolder)
-    # This copies the Solr configs from main 'dspace' container into 'dspacesolr' via that volume
-    - solr_configs:/opt/solr/server/solr/configsets/dspace
     # Keep Solr data directory between reboots
     - solr_data:/var/solr/data
     - solr_logs:/var/solr/logs
@@ -157,21 +158,21 @@ services:
     - '-c'
     - |
       init-var-solr
-      precreate-core authority /opt/solr/server/solr/configsets/dspace/authority
-      cp -r -u /opt/solr/server/solr/configsets/dspace/authority/* authority
-      precreate-core oai /opt/solr/server/solr/configsets/dspace/oai
-      cp -r -u /opt/solr/server/solr/configsets/dspace/oai/* oai
-      precreate-core search /opt/solr/server/solr/configsets/dspace/search
-      cp -r -u /opt/solr/server/solr/configsets/dspace/search/* search
-      precreate-core statistics /opt/solr/server/solr/configsets/dspace/statistics
-      cp -r -u /opt/solr/server/solr/configsets/dspace/statistics/* statistics
+      precreate-core authority /opt/solr/server/solr/configsets/authority
+      cp -r /opt/solr/server/solr/configsets/authority/* authority
+      precreate-core oai /opt/solr/server/solr/configsets/oai
+      cp -r /opt/solr/server/solr/configsets/oai/* oai
+      precreate-core search /opt/solr/server/solr/configsets/search
+      cp -r /opt/solr/server/solr/configsets/search/* search
+      precreate-core statistics /opt/solr/server/solr/configsets/statistics
+      cp -r /opt/solr/server/solr/configsets/statistics/* statistics
       exec solr -p 898${INSTANCE} -f -m 4g
 volumes:
+  # Commented out because there are a lot of files in the assetstore
   assetstore:
   pgdata:
   solr_data:
   # Special volume used to share Solr configs from 'dspace' to 'dspacesolr' container (see above)
-  solr_configs:
   dspace_logs:
   solr_logs:
   handle_server:

@@ -129,13 +129,13 @@ export class DefineLicenseFormComponent implements OnInit {
   private loadArrayValuesToForm() {
     // add passed extendedClarinLicenseLabels to the form because add them to the form in the init is a problem
     const extendedClarinLicenseLabels = (this.clarinLicenseForm.controls.extendedClarinLicenseLabels).value as any[];
-    this.extendedClarinLicenseLabels.forEach(extendedClarinLicenseLabel => {
+    this.extendedClarinLicenseLabels?.forEach(extendedClarinLicenseLabel => {
       extendedClarinLicenseLabels.push(extendedClarinLicenseLabel);
     });
 
     // add passed requiredInfo to the form because add them to the form in the init is a problem
     const requiredInfoOptions = (this.clarinLicenseForm.controls.requiredInfo).value as any[];
-    this.requiredInfo.forEach(requiredInfo => {
+    this.requiredInfo?.forEach(requiredInfo => {
       requiredInfoOptions.push(requiredInfo);
     });
   }
@@ -151,7 +151,7 @@ export class DefineLicenseFormComponent implements OnInit {
    * Add or remove checkbox value from form array based on the checkbox selection
    * @param event
    * @param formName
-   * @param extendedClarinLicenseLabel
+   * @param checkBoxValue
    */
   changeCheckboxValue(event: any, formName: string, checkBoxValue) {
     let form = null;
@@ -169,11 +169,17 @@ export class DefineLicenseFormComponent implements OnInit {
     if (event.target.checked) {
       form.push(checkBoxValue);
     } else {
-      form.forEach((formValue, index)  => {
-        if (formValue?.id === checkBoxValue.id) {
-          form.splice(index, 1);
-        }
-      });
+      // Required Info needs to be checked by some other property, because id is glitching
+      const index = form.findIndex(item =>
+        item && (
+          formName === 'requiredInfo'
+          ? item.name === checkBoxValue.name
+          : checkBoxValue.id === item.id)
+        );
+
+      if (index !== -1) {
+        form.splice(index, 1);
+      }
     }
   }
 

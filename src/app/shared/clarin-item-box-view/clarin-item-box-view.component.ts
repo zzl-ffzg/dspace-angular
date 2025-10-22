@@ -41,7 +41,6 @@ import { AUTHOR_METADATA_FIELDS } from '../../core/shared/clarin/constants';
   styleUrls: ['./clarin-item-box-view.component.scss']
 })
 export class ClarinItemBoxViewComponent implements OnInit {
-
   protected readonly AUTHOR_METADATA_FIELDS = AUTHOR_METADATA_FIELDS;
 
   ITEM_TYPE_IMAGES_PATH = './assets/images/item-types/';
@@ -147,14 +146,19 @@ export class ClarinItemBoxViewComponent implements OnInit {
     this.itemUri = getItemPageRoute(this.item);
     this.itemDescription = this.item?.firstMetadataValue('dc.description');
     this.itemPublisher = this.item?.firstMetadataValue('dc.publisher');
-    this.publisherRedirectLink = this.baseUrl + '/search?f.publisher=' + encodeURIComponent(this.itemPublisher)
-      + ',equals';
     this.itemDate = this.clarinDateService.composeItemDate(this.item);
 
     await this.assignBaseUrl();
+    this.publisherRedirectLink = this.getSearchEndpoint() + '?f.publisher=' + encodeURIComponent(this.itemPublisher)
+      + ',equals';
     this.getItemCommunity();
     this.loadItemLicense();
     this.getItemFilesSize();
+  }
+
+  private getSearchEndpoint(): string {
+    // Return the search endpoint URL for with the base URL. Remove trailing slashes to ensure a clean URL.
+    return this.baseUrl.replace(/\/+$/, '') +  '/search';
   }
 
   private getItemFilesSize() {
@@ -193,8 +197,7 @@ export class ClarinItemBoxViewComponent implements OnInit {
           .pipe(getFirstSucceededRemoteDataPayload())
           .subscribe((community: Community) => {
             this.itemCommunity.next(community);
-            const encodedRedirectLink = this.baseUrl +
-              '/search?f.items_owning_community=' + encodeURIComponent(this.dsoNameService.getName(community)) + ',equals';
+            const encodedRedirectLink = this.getSearchEndpoint() + '?f.items_owning_community=' + encodeURIComponent(this.dsoNameService.getName(community)) + ',equals';
             this.communitySearchRedirect.next(encodedRedirectLink);
           });
       });
@@ -261,7 +264,25 @@ export class ClarinItemBoxViewComponent implements OnInit {
 
   handleImageError(event) {
     const imgElement = event.target as HTMLImageElement;
-    imgElement.src = this.ITEM_TYPE_IMAGES_PATH + this.ITEM_TYPE_DEFAULT_IMAGE_NAME;
+    imgElement.src =
+      this.ITEM_TYPE_IMAGES_PATH + this.ITEM_TYPE_DEFAULT_IMAGE_NAME;
+  }
+
+  // formating the alt text according to itemType
+  formateIconsAltText(itemType: string) {
+    if (!itemType) {
+      return 'icon';
+    }
+    return (
+      itemType
+        .replace(/([A-Z])/g, ' $1')
+        .replace(/-/g, ' ')
+        .replace(/_/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .toLowerCase()
+        .replace(/^\w/, (c) => c.toUpperCase()) + ' icon'
+    );
   }
 }
 
