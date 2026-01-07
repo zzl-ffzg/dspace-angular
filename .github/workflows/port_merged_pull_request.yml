@@ -36,8 +36,8 @@ jobs:
           pull_description: 'Port of #${pull_number} by @${pull_author} to `${target_branch}`.'
           # Skip any merge commits in the ported PR. This means only non-merge commits are cherry-picked to the new PR
           merge_commits: 'skip'
-					experimental: |
-						{
-							"downstream_repo": "dspace",
-							"downstream_owner": "dataquest-dev"
-						}
+          experimental: |
+            {
+              "downstream_repo": "dspace",
+              "downstream_owner": "dataquest-dev"
+            }
