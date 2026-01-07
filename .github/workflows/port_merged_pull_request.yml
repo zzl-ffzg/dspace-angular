@@ -10,6 +10,8 @@ on:
     types: [ closed ]
     branches:
       - clarin-v7
+  issue_comment:
+    types: [created]
 
 permissions:
   contents: write      # so action can add comments
@@ -19,13 +21,21 @@ jobs:
   port_pr:
     runs-on: ubuntu-latest
     # Don't run on closed *unmerged* pull requests
-    if: github.event.pull_request.merged
+    if: >
+      (
+        github.event_name == 'pull_request_target' &&
+        github.event.pull_request.merged
+      ) || (
+        github.event_name == 'issue_comment' &&
+        github.event.issue.pull_request &&
+        startsWith(github.event.comment.body, '/backport')
+      )
     steps:
       # Checkout code
       - uses: actions/checkout@v6
       # Port PR to other branch (ONLY if labeled with "port to")
       - name: Port pull requests
-        uses: kosarko/backport-action@c0f263cbeb69d6b20df1eb2dab67bdf5ac5846d1
+        uses: kosarko/backport-action@13bef9ed6ac122ea6ff0a6ab09d82a618cded6a0
         with:
           # Trigger based on a "port to [branch]" label on PR
           # (This label must specify the branch name to port to)
@@ -38,6 +48,6 @@ jobs:
           merge_commits: 'skip'
           experimental: |
             {
-              "downstream_repo": "dspace",
+              "downstream_repo": "dspace-angular",
               "downstream_owner": "dataquest-dev"
             }
