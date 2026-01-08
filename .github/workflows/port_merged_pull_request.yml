@@ -31,8 +31,6 @@ jobs:
         startsWith(github.event.comment.body, '/backport')
       )
     steps:
-      # Checkout code
-      - uses: actions/checkout@v6
       # Grab stronger auth token
       # We are cherry-picking our commits on top of a remote branch
       # the remote might have different workflows
@@ -42,6 +40,10 @@ jobs:
         with:
           app-id: ${{ secrets.APP_ID }}
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
+      # Checkout code
+      - uses: actions/checkout@v6
+        with:
+          token: ${{ steps.app-token.outputs.token }}
       # Port PR to other branch (ONLY if labeled with "port to")
       - name: Port pull requests
         uses: kosarko/backport-action@13bef9ed6ac122ea6ff0a6ab09d82a618cded6a0
