@@ -32,7 +32,7 @@
 
   "error-page.description.404": "stranica nije pronađena",
 
-  "error-page.orcid.generic-error": "Pojavila se greška tijekom prijave putem ORCID-a. Provjerite jeste li podijelili svoju adresu e-pošte ORCID korisničkog računa s DSpaceom. Ako se greška ponovi, kontaktirajte administratora.",
+  "error-page.orcid.generic-error": "Pojavila se greška tijekom prijave putem ORCID-a. Provjerite jeste li podijelili svoju adresu e-pošte ORCID korisničkog računa s HR-CLARIN repozitorijem. Ako se greška ponovi, kontaktirajte administratora.",
 
   "access-status.embargo.listelement.badge": "Embargo",
 
@@ -144,7 +144,7 @@
 
   "admin.registries.metadata.breadcrumbs": "Registar metapodataka",
 
-  "admin.registries.metadata.description": "Registar metapodataka održava popis svih polja metapodataka dostupnih u repozitoriju. Te se datoteke mogu podijeliti na više shema. Međutim, DSpace zahtijeva kvalificiranu Dublin Core shemu.",
+  "admin.registries.metadata.description": "Registar metapodataka održava popis svih polja metapodataka dostupnih u repozitoriju. Te se datoteke mogu podijeliti na više shema. Međutim, HR-CLARIN repozitorij zahtijeva kvalificiranu Dublin Core shemu.",
 
   "admin.registries.metadata.form.create": "Stvori metapodatkovnu shemu",
 
@@ -959,7 +959,7 @@
 
   "contact-us.title": "Kontaktirajte nas",
 
-  "contact-us.description": "Administratore DSpacea možete kontaktirati putem:",
+  "contact-us.description": "Administratore HR-CLARIN repozitorija možete kontaktirati putem:",
 
   "contact-us.form": "Mrežni obrazac: ",
 
@@ -1560,7 +1560,7 @@
 
   "dso-selector.set-scope.community.head": "Odaberite opseg pretraživanja",
 
-  "dso-selector.set-scope.community.button": "Pretraži cijeli DSpace",
+  "dso-selector.set-scope.community.button": "Pretraži cijeli HR-CLARIN repozitorij",
 
   "dso-selector.set-scope.community.or-divider": "ili",
 
@@ -1928,7 +1928,7 @@
 
   "health-page.section.no-issues": "Nema otkrivenih problema",
 
-  "home.description": "DSpace je digitalna usluga koja prikuplja, čuva i distribuira digitalni materijal. Repozitoriji su važni alati za očuvanje naslijeđa organizacije; oni olakšavaju digitalno očuvanje i znanstvenu komunikaciju.",
+  "home.description": "HR-CLARIN repozitorij je digitalna usluga koja prikuplja, čuva i distribuira digitalni materijal. Repozitoriji su važni alati za očuvanje naslijeđa organizacije; oni olakšavaju digitalno očuvanje i znanstvenu komunikaciju.",
 
   "home.breadcrumbs": "Početna",
 
@@ -1936,7 +1936,7 @@
 
   "home.title": "Početna stranica",
 
-  "home.top-level-communities.head": "Zajednice u DSpaceu",
+  "home.top-level-communities.head": "Zajednice u HR-CLARIN repozitoriju",
 
   "home.top-level-communities.help": "Odaberite zajednicu kako biste pregledavali njezine zbirke.",
 
@@ -2125,7 +2125,7 @@
 
   "info.feedback.title": "Povratna informacija",
 
-  "info.feedback.info": "Hvala vam što se s nama podijelili povratne informacije o DSpaceu. Cijenimo vaše komentare!",
+  "info.feedback.info": "Hvala vam što se s nama podijelili povratne informacije o HR-CLARIN repozitoriju. Cijenimo vaše komentare!",
 
   "info.feedback.email_help": "Ova će se adresa koristiti za praćenje vaše povratne informacije.",
 
@@ -3188,7 +3188,7 @@
 
   "login.form.forgot-password": "Jeste li zaboravili svoju lozinku?",
 
-  "login.form.header": "Molimo, prijavite se u DSpace",
+  "login.form.header": "Molimo, prijavite se u HR-CLARIN repozitorij",
 
   "login.form.new-user": "Novi ste korisnik? Kliknite ovdje da biste se registrirali.",
 
@@ -3212,7 +3212,7 @@
 
   "login.breadcrumbs": "Prijava",
 
-  "logout.form.header": "Odjava s DSpacea",
+  "logout.form.header": "Odjava s HR-CLARIN repozitorija",
 
   "logout.form.submit": "Odjava",
 
@@ -3313,7 +3313,7 @@
 
   "menu.section.browse_community_by_title": "Po naslovu",
 
-  "menu.section.browse_global": "Sve u DSpaceu",
+  "menu.section.browse_global": "Sve u HR-CLARIN repozitoriju",
 
   "menu.section.browse_global_by_author": "Po autoru",
 
@@ -3473,7 +3473,7 @@
 
   "autocomplete.suggestion.sponsor.eu": "EU",
 
-  "mydspace.breadcrumbs": "Moj DSpace",
+  "mydspace.breadcrumbs": "Moj HR-CLARIN",
 
   "mydspace.description": "",
 
@@ -3527,7 +3527,7 @@
 
   "mydspace.results.no-uri": "Nema URI-ja",
 
-  "mydspace.search-form.placeholder": "Traži u moj DSpace...",
+  "mydspace.search-form.placeholder": "Traži u moj HR-CLARIN...",
 
   "mydspace.show.workflow": "Zadaci radnog procesa",
 
@@ -3545,7 +3545,7 @@
 
   "mydspace.status.mydspaceWorkspace": "Radni prostor",
 
-  "mydspace.title": "Moj DSpace",
+  "mydspace.title": "Moj HR-CLARIN",
 
   "mydspace.upload.upload-failed": "Došlo je do greške pri stvaranju novog radnog prostora. Molimo provjerite preneseni sadržaj prije ponovnog pokušaja.",
 
@@ -3557,7 +3557,7 @@
 
   "mydspace.view-btn": "Pregled",
 
-  "nav.browse.header": "Sve u DSpaceu",
+  "nav.browse.header": "Sve u HR-CLARIN repozitoriju",
 
   "nav.community-browse.header": "Po zajednici",
 
@@ -3573,7 +3573,7 @@
 
   "nav.main.description": "Glavna navigacijska traka",
 
-  "nav.mydspace": "Moj DSpace",
+  "nav.mydspace": "Moj HR-CLARIN",
 
   "nav.profile": "Profil",
 
@@ -3933,7 +3933,7 @@
 
   "register-page.registration.header": "Registracija novog korisnika",
 
-  "register-page.registration.info": "Registrirajte račun da biste se pretplatili na obavijesti o zbirkama i podnosili nove objekte u DSpace.",
+  "register-page.registration.info": "Registrirajte račun da biste se pretplatili na obavijesti o zbirkama i podnosili nove objekte u HR-CLARIN repozitorij.",
 
   "register-page.registration.email": "Adresa e-pošte *",
 
@@ -4015,11 +4015,11 @@
 
   "repository.image.logo": "Logotip repozitorija",
 
-  "repository.title": "DSpace repozitorij",
+  "repository.title": "HR-CLARIN repozitorij",
 
-  "repository.title.prefix": "DSpace repozitorij ",
+  "repository.title.prefix": "HR-CLARIN repozitorij ",
 
-  "repository.title.prefixDSpace": "DSpace",
+  "repository.title.prefixDSpace": "HR-CLARIN",
 
   "resource-policies.add.button": "Dodaj",
 
@@ -4466,7 +4466,7 @@
 
   "search.form.search_dspace": "Cijeli repozitorij",
 
-  "search.form.scope.all": "Cijeli DSpace",
+  "search.form.scope.all": "Cijeli HR-CLARIN repozitorij",
 
   "search.results.head": "Rezultati pretrage",
 
@@ -4656,9 +4656,9 @@
 
   "submission.import-external.title.none": "Uvoz metapodataka iz vanjskog izvora",
 
-  "submission.import-external.page.hint": "Unesite upit iznad kako biste pronašli objekte na mreži za uvoz u DSpace.",
+  "submission.import-external.page.hint": "Unesite upit iznad kako biste pronašli objekte na mreži za uvoz u HR-CLARIN repozitorij.",
 
-  "submission.import-external.back-to-my-dspace": "Natrag na moj DSpace",
+  "submission.import-external.back-to-my-dspace": "Natrag na moj HR-CLARIN",
 
   "submission.import-external.search.placeholder": "Pretraži vanjski izvor",
 
@@ -5496,7 +5496,7 @@
 
   "thumbnail.person.placeholder": "Nema dostupne profilne slike",
 
-  "title": "DSpace",
+  "title": "HR-CLARIN",
 
   "vocabulary-treeview.header": "Hijerarhijski prikaz stabla",
 
