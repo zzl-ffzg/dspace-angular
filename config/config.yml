@@ -103,6 +103,9 @@ languages:
   - code: hu
     label: Magyar
     active: false
+  - code: hr
+    label: Hrvatski
+    active: false
   - code: nl
     label: Nederlands
     active: false
